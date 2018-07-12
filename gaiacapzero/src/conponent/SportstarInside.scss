@@ -1,0 +1,1272 @@
+.a_star{
+    opacity: 0;
+}
+.a_star1{
+   opacity: 0;
+}
+.a_none{
+    visibility: hidden;
+}
+.a_invisible{
+    visibility: hidden;
+}
+@media screen and (max-width:375px){
+    .a_star{
+        opacity: 1;;
+    }
+    .a_none{
+        visibility: visible;
+    }
+    .a_invisible{
+        visibility: visible;
+    }
+}
+
+
+$animate_sec: 0.5s;
+.a_fadeleft{
+    animation: animate_show $animate_sec*3;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+.a_fadeleft1{
+    animation: animate_show2 $animate_sec*3;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+.a_fadeleft2{
+    animation: animate_show1 $animate_sec*2;
+    visibility: visible;
+}
+.a_fadeleft3{
+    animation: animate_show1 $animate_sec*1;
+    visibility: visible;
+}
+@keyframes animate_show{
+    0%{
+        opacity: 0;
+        transform: scale(2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }     
+}
+@keyframes animate_show1{
+    0%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }     
+}
+@keyframes animate_show2{
+    0%{
+        opacity: 0;
+        transform:translateX(600px) rotate(90deg) ;
+    }
+    100%{
+        opacity: 1;
+        transform:translate(0) rotate(0) ;
+    }     
+}
+
+
+
+@keyframes ani07{
+    0%{ opacity: 0;transform: translate(-300px,0)}
+    100%{opacity:1;transform: translate(0,0)}
+  }
+@keyframes ani08{
+    0%{ opacity: 0;transform: translate(0,200px)}
+    100%{opacity:1;transform: translate(0,0)}
+}
+@keyframes ani09{
+    0%{ opacity: 0;transform: translate(300px,0)}
+    100%{opacity:1;transform: translate(0,0)}
+}
+
+
+
+.a_faderight{
+    animation: animate_showoff $animate_sec*3;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+.a_faderight1{
+    animation: animate_showoff2 $animate_sec*3;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+.a_faderight2{
+    animation: animate_showoff1 $animate_sec*2;
+    visibility: visible;
+}
+.a_faderight3{
+    animation: animate_showoff1 $animate_sec*1;
+    visibility: visible;
+}
+@keyframes animate_showoff1{
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }     
+}
+@keyframes animate_showoff2{
+    0%{
+        opacity: 0;
+        transform:translateX(-600px) rotate(-90deg) ;
+    }
+    100%{
+        opacity: 1;
+        transform:translate(0) rotate(0) ;
+    }   
+}
+@keyframes animate_showoff{
+    0%{
+        opacity: 0;
+        transform: scale(2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    } 
+}
+
+
+.a_fadeon{
+    animation: animate_showon 0.8s;
+    visibility: visible;
+}
+@keyframes animate_showon{
+    0%{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+
+
+@mixin row_players_style{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin span_style{
+    display: block;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+@mixin p_style{
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-align: justify;
+    width: 708px;
+}
+@mixin more_introduction_style{
+    width: 150px;
+    height: 30px;        
+    background: #000;
+    border-radius: 10px;
+    text-align: center; 
+    padding-top: 16px;
+    margin-top: 20px;
+    margin-bottom: 38px;    
+    cursor: pointer;
+}
+@mixin btn_text_style{
+    font-size: 16px; 
+    color: #fff; 
+    letter-spacing: 2px;
+}
+@mixin left_player_style{
+    margin-left: 70px;
+    position: relative;
+    margin-top: 300px; 
+}
+@mixin right_player_style{
+    margin-right: 70px;
+    position: relative;
+}
+@mixin product_img_style{
+    width: 200px;
+    height: 200px;
+    box-shadow:0 10px 10px rgba(0,0,0,0.6);
+    cursor: pointer;
+    z-index: 999;
+}
+@mixin a_pic_hover_style{
+    transform: translateY(-14px);
+    transition: all .5s;
+}
+
+/*------RWD*/
+$pc-screen:1903px;
+$phone-screen:375px;
+@mixin phone-width(){
+    @media screen and (max-width:$phone-screen){
+        @content;
+    }
+}$phone-screen:375px;
+@mixin phone-width(){
+    @media screen and (max-width:$phone-screen){
+        @content;
+    }
+}
+/*------RWD*/
+
+//---------------Header--------------
+.a_sportstar_content{
+    position: relative;
+    max-width: 1903px;
+    height: 909px;
+    background: url(/images/GAIA_CAPA_playlist_banner_pic1.jpg) center no-repeat fixed;
+}
+#a_sportstar_cover{
+    overflow: hidden;
+    width: 1903px;
+    height: 909px; 
+    // margin-top: 80px;  
+    .a_three_players{
+        position: relative;
+        ul{
+            // position: absolute;
+            text-align: center;         
+        }   
+        span{
+            text-shadow:0px 10px 5px rgba(0,0,0,0.75);
+        }     
+        p{
+            opacity: 0;
+            font-size: 100px;
+            font-weight: bold;
+            color: #fff;
+            position: absolute;
+            top: 420px;
+            left: 670px;
+            text-shadow:0px 10px 5px rgba(0,0,0,0.75);
+            animation: animate_showon 1s;
+            animation-delay: 3.5s;
+            animation-fill-mode: forwards;
+        }    
+        li{
+            position: absolute;
+        } 
+
+        .a_player1{
+            opacity: 0;
+            left: 170px;
+            top: 142px;
+            animation: ani07 1s;
+            animation-delay: 3.5s;
+            animation-fill-mode: forwards;
+            img{
+                width:  71%;               
+            }
+        }
+        .a_player2{
+            opacity: 0;
+            left: 790px;
+            top: 125px;
+            animation: ani09 2.5s;
+            animation-delay: 3.5s;
+            animation-fill-mode: forwards;
+            img{
+                width: 98%;
+            }
+        }
+        .a_player3{
+            opacity: 0;
+            left: 515px;
+            top: 69px;
+            animation: ani08 1.5s;
+            animation-delay: 3.5s;
+            animation-fill-mode: forwards;
+            img{
+                width: 82%;    
+            }
+        }
+        .a_mlb_logo{
+            opacity: 0;
+            left: 713px;
+            top: 291px;
+            display: flex;
+            animation: animate_showon 2s;
+            animation-delay: 3.5s;
+            animation-fill-mode: forwards;
+            img{
+                box-shadow:0px 10px 5px rgba(0,0,0,0.75);
+                animation: animate_showon 1s;
+            }
+            span{
+                font-size: 97px;
+                font-weight: bolder;
+                color: #fff;
+                margin: 10px 0 0 20px;
+                animation: animate_showon 1s;
+            }
+        }       
+    }  
+}
+@media screen and (max-width:375px){
+    .a_sportstar_content{
+        position: relative;
+        max-width: 375px;
+        height: 587px;
+        background: url(/images/GAIA_CAPA_playlist_banner_pic1.jpg) center no-repeat;
+    }
+    #a_sportstar_cover{
+        width: 375px;
+        height: 666px; 
+        margin-top: 80px;  
+        .a_three_players{
+            position: relative;
+            ul{
+                text-align: center;         
+            }      
+            p{
+                animation: animate_showon 2s;
+                font-size: 58px;
+                top: 324px;
+                left: 10px;
+                text-shadow: none;
+            }  
+            .a_player1{
+                display: none;
+            }
+            .a_player2{
+                display: none;
+            }
+            .a_player3{
+                display: none;
+            }
+            .a_mlb_logo{
+                left: 0px;
+                top: 10px;
+                img{
+                    animation: animate_showon 1s;
+                    margin-left: 90px;
+                    box-shadow:none;
+                }
+                span{
+                    animation: animate_showon 1.5s;
+                    font-size: 60px;
+                    font-weight: bolder;
+                    color: #fff;
+                    margin-top: 220px;
+                    margin-left: -170px;
+                    text-shadow: none;
+                }
+            }       
+        }  
+    }
+}
+//---------------Player List---------------
+.a_players_introduction{
+    width: 1903px;
+    margin: 70px 0;
+    background: url(/images/player_member_background.png) center ;
+    h3{
+        font-size: 42px;
+        font-weight: 700;
+    }
+    img{
+        width: 708px;
+    }
+}
+.a_first_row_players{
+    @include row_players_style;
+    span{
+        @include span_style;
+    }
+    p{  
+        @include p_style;
+    }
+    .a_cluber{
+        @include left_player_style;
+    }
+    .a_judge{
+        @include right_player_style;
+    }
+    .a_more_introduction{
+        @include more_introduction_style;
+        .a_btn_text{
+            @include btn_text_style;    
+        }
+    }
+    .a_product_pic{
+        position: absolute;
+        top: 160px;
+        right: 70px;
+        z-index: 1;
+        :hover{
+            @include a_pic_hover_style; 
+        }
+        img{
+            @include product_img_style;          
+        }
+    }
+}
+@media screen and (max-width:375px){
+    .a_players_introduction{
+        width: 375px;
+        margin-bottom: 70px;
+        margin-top: 0px;
+        h3{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        img{
+            width: 308px;
+        }
+    }
+    .a_first_row_players{
+        @include row_players_style;
+        display: block;
+        span{
+            @include span_style;
+            font-size: 20px;
+        }
+        p{  
+            @include p_style;
+            width: 310px;
+            margin: 20px 0;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .a_cluber{
+            @include left_player_style;
+            display: none;
+        }
+        .a_judge{
+            @include right_player_style;
+            margin: 0 0 0 28px; 
+                .a_star1{
+                opacity: 1;
+            }
+        }
+        .a_more_introduction{
+            display: none;
+        }
+        .a_product_pic{
+            position: absolute;
+            top: -30px;
+            right: 28px;
+            z-index: 1;
+            :hover{
+                @include a_pic_hover_style; 
+            }
+            img{
+                @include product_img_style;
+                width: 100px;
+                height: 100px;  
+                box-shadow: none;                        
+            }
+        }
+    }
+    
+}
+//---------------second row--------------
+.a_second_row_players{
+        @include row_players_style;
+    span{
+        @include span_style;
+    }
+    p{  
+        @include p_style;
+    }
+    .a_bryant{
+        @include left_player_style;
+    }
+    .a_altuve{
+        @include right_player_style;
+        a{
+            cursor: default;
+        }
+    }
+    .a_more_introduction{
+        @include more_introduction_style;
+        .a_btn_text{
+            @include btn_text_style;      
+        }
+    }
+    .a_product_pic2{
+        position: absolute;
+        top: 176px;
+        right: 30px;
+        z-index: 1;
+        :hover{
+            @include a_pic_hover_style; 
+        }
+        img{
+            @include product_img_style;
+        }        
+    }
+}
+@media screen and (max-width:375px){
+    .a_second_row_players{
+        @include row_players_style;
+        display: block;
+        span{
+            @include span_style;
+            font-size: 20px;
+        }
+        p{  
+            @include p_style;
+            width: 310px;
+            margin: 20px 0;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .a_bryant{
+            @include left_player_style;
+            display: none;
+        }
+        .a_altuve{
+            @include right_player_style;
+            margin: 100px 0 0 28px; 
+                .a_star1{
+                opacity: 1;
+            }
+        }
+        .a_more_introduction{
+            display: none;
+        }
+        .a_product_pic2{
+            position: absolute;
+            top: -30px;
+            right: 8px;
+            z-index: 1;
+            :hover{
+                @include a_pic_hover_style; 
+            }
+            img{
+                @include product_img_style;
+                width: 100px;
+                height: 100px;  
+                box-shadow: none;                        
+            }
+        }
+    }
+    
+}
+//---------------third row--------------
+.a_third_row_players{
+    @include row_players_style;
+    span{
+        @include span_style;
+    }
+    p{  
+        @include p_style;
+    }
+    .a_betts{
+        @include left_player_style;
+    }
+    .a_trout{
+        @include right_player_style;
+        a{
+        cursor:default;
+        }
+    }
+    .a_more_introduction{
+        @include more_introduction_style;
+        .a_btn_text{
+            @include btn_text_style;      
+        }
+    }
+    .a_product_pic3{
+        position: absolute;
+        top: 160px;
+        right: 20px;
+        z-index: 1;
+        :hover{
+            @include a_pic_hover_style; 
+        }
+        img{
+            @include product_img_style;
+        }        
+    }
+}
+@media screen and (max-width:375px){
+    .a_third_row_players{
+        @include row_players_style;
+        display: block;
+        span{
+            @include span_style;
+            font-size: 20px;
+        }
+        p{  
+            @include p_style;
+            width: 310px;
+            margin: 20px 0;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .a_betts{
+            @include left_player_style;
+            display: none;
+        }
+        .a_trout{
+            @include right_player_style;
+            margin: 100px 0 0 28px; 
+                .a_star1{
+                opacity: 1;
+            }
+        }
+        .a_more_introduction{
+            display: none;
+        }
+        .a_product_pic3{
+            position: absolute;
+            top: -30px;
+            right: 20px;
+            z-index: 1;
+            :hover{
+                @include a_pic_hover_style; 
+            }
+            img{
+                @include product_img_style;
+                width: 100px;
+                height: 100px;  
+                box-shadow: none;                        
+            }
+        }
+    }
+    
+}
+//---------------forth row---------------
+.a_forth_row_players{
+    @include row_players_style;
+    span{
+        @include span_style;
+    }
+    p{  
+        @include p_style;
+    }
+    .a_arenado{
+        @include left_player_style;
+    }
+    .a_greinke{
+        @include right_player_style;
+        a{
+        cursor: default;
+        }
+    }
+    .a_more_introduction{
+        @include more_introduction_style;
+        .a_btn_text{
+            @include btn_text_style;      
+        }
+    }
+    .a_product_pic4{
+        position: absolute;
+        top: 180px;
+        right: 20px;
+        z-index: 1;
+        :hover{
+            @include a_pic_hover_style; 
+        }
+        img{
+            @include product_img_style;
+        }        
+    }
+}
+@media screen and (max-width:375px){
+    .a_forth_row_players{
+        @include row_players_style;
+        display: block;
+        span{
+            @include span_style;
+            font-size: 20px;
+        }
+        p{  
+            @include p_style;
+            width: 310px;
+            margin: 20px 0;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .a_arenado{
+            @include left_player_style;
+            display: none;
+        }
+        .a_greinke{
+            @include right_player_style;
+            margin: 100px 0 0 28px; 
+                .a_star1{
+                opacity: 1;
+            }
+        }
+        .a_more_introduction{
+            display: none;
+        }
+        .a_product_pic4{
+            position: absolute;
+            top: 75px;
+            top: -30px;
+            right: 6px;
+            :hover{
+                @include a_pic_hover_style; 
+            }
+            img{
+                @include product_img_style;
+                width: 100px;
+                height: 100px;  
+                box-shadow: none;                        
+            }
+        }
+    }
+    
+}
+
+//---------------fifth row---------------
+.a_fifth_row_players{
+    @include row_players_style;
+    span{
+        @include span_style;
+    }
+    p{  
+        @include p_style;
+    }
+    .a_harper{
+        @include left_player_style;
+    }
+    .a_kershaw{
+        @include right_player_style;
+        a{
+            cursor: default;
+        }
+    }
+    .a_more_introduction{
+        @include more_introduction_style;
+        .a_btn_text{
+            @include btn_text_style;      
+        }
+    }
+    .a_product_pic5{
+        position: absolute;
+        top: 190px;
+        right: 20px;
+        z-index: 1;
+        :hover{
+            @include a_pic_hover_style; 
+        }
+        img{
+            @include product_img_style;
+        }        
+    }
+}
+@media screen and (max-width:375px){
+    .a_fifth_row_players{
+        @include row_players_style;
+        display: block;
+        span{
+            @include span_style;
+            font-size: 20px;
+        }
+        p{  
+            @include p_style;
+            width: 310px;
+            margin: 20px 0;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .a_harper{
+            @include left_player_style;
+            display: none;
+        }
+        .a_kershaw{
+            @include right_player_style;
+            margin: 100px 0 0 28px; 
+                .a_star1{
+                opacity: 1;
+            }
+        }
+        .a_more_introduction{
+            display: none;
+        }
+        .a_product_pic5{
+            position: absolute;
+            top: -30px;
+            right: 8px;
+            z-index: 1;
+            :hover{
+                @include a_pic_hover_style; 
+            }
+            img{
+                @include product_img_style;
+                width: 100px;
+                height: 100px;  
+                box-shadow: none;                        
+            }
+        }
+    }
+    
+}
+//---------------sixth row---------------
+.a_sixth_row_players{
+    @include row_players_style;
+    span{
+        @include span_style;
+    }
+    p{  
+        @include p_style;
+    }
+    .a_syndergaard{
+        @include left_player_style;
+    }
+    .a_molina{
+        @include right_player_style;
+
+    }
+    .a_more_introduction{
+        @include more_introduction_style;
+        .a_btn_text{
+            @include btn_text_style;      
+        }
+    }
+    .a_product_pic6{
+        position: absolute;
+        top: 180px;
+        right: 20px;
+        z-index: 1;
+        :hover{
+            @include a_pic_hover_style; 
+        }
+        img{
+            @include product_img_style;
+        }        
+    }
+}
+@media screen and (max-width:375px){
+    .a_sixth_row_players{
+        @include row_players_style;
+        display: block;
+        span{
+            @include span_style;
+            font-size: 20px;
+        }
+        p{  
+            @include p_style;
+            width: 310px;
+            margin: 20px 0;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .a_syndergaard{
+            @include left_player_style;
+            display: none;
+        }
+        .a_molina{
+            @include right_player_style;
+            margin: 100px 0 0 28px; 
+                .a_star1{
+                opacity: 1;
+            }
+        }
+        .a_more_introduction{
+            display: none;
+        }
+        .a_product_pic6{
+            position: absolute;
+            top: -30px;
+            right: 28px;
+            z-index: 1;
+            :hover{
+                @include a_pic_hover_style; 
+            }
+            img{
+                @include product_img_style;
+                width: 100px;
+                height: 100px;  
+                box-shadow: none;                        
+            }
+        }
+    }    
+}
+//---------------seventh row---------------
+.a_seventh_row_players{
+    @include row_players_style;
+    span{
+        @include span_style;
+    }
+    p{  
+        @include p_style;
+    }
+    .a_posey{
+        @include left_player_style;
+    }
+    .a_chen{
+        @include right_player_style;
+        a{
+            cursor: default;
+        }
+    }
+    .a_more_introduction{
+        @include more_introduction_style;
+        .a_btn_text{
+            @include btn_text_style;      
+        }
+    }
+    .a_product_pic7{
+        position: absolute;
+        top: 160px;
+        right: 20px;
+        z-index: 1;
+        :hover{
+            @include a_pic_hover_style; 
+        }
+        img{
+            @include product_img_style;
+        }        
+    }
+}    
+@media screen and (max-width:375px){
+    .a_seventh_row_players{
+        @include row_players_style;
+        display: block;
+        span{
+            @include span_style;
+            font-size: 20px;
+        }
+        p{  
+            @include p_style;
+            width: 310px;
+            margin: 20px 0;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .a_posey{
+            @include left_player_style;
+            display: none;
+        }
+        .a_chen{
+            @include right_player_style;
+            margin: 100px 0 0 28px; 
+                .a_star1{
+                opacity: 1;
+            }
+        }
+        .a_more_introduction{
+            display: none;
+        }
+        .a_product_pic7{
+            position: absolute;
+            top: -30px;
+            right: 6px;
+            z-index: 1;
+            :hover{
+                @include a_pic_hover_style; 
+            }
+            img{
+                @include product_img_style;
+                width: 100px;
+                height: 100px;  
+                box-shadow: none;                        
+            }
+        }
+    }    
+}
+// ------------------------------
+.a_scrollup {
+        background-color: black;
+        border-radius: 10px;
+        bottom: 50px;
+        color: #fff;
+        font-size: 30px;
+        height: 40px;
+        line-height: 36px;
+        position: fixed;
+        right: 20px;
+        text-align: center;
+        width: 40px;
+        cursor: pointer;
+        z-index:9;
+    }
+@media screen and(max-width:375px){
+    .a_scrollup{
+        display: none;
+    }
+}
+
+//marvel mask
+
+
+
+.mask_background_sport{
+            width:100%;
+            height: 989px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            .mask_box1{
+                width:13%;
+                height:50%;
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                transition: all 0.35s;
+            }
+            .mask_box2{
+                width:37%;
+                height:50%;
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                transition: all 0.35s;
+            }
+
+            .mask_1{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/MLB/MLBplayerlist_mask_01.png');
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_2{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/MLB/MLBplayerlist_mask_02.png');
+                    background-position: right bottom;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 2s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_3{
+                 position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/MLB/MLBplayerlist_mask_03.png');
+                    background-position: left bottom;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 1s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_4{
+                 position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/MLB/MLBplayerlist_mask_04.png');
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_5{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/MLB/MLBplayerlist_mask_05.png');
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_6{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/MLB/MLBplayerlist_mask_06.png');
+                    background-position: right top;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 1s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_7{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/MLB/MLBplayerlist_mask_07.png');
+                    background-position: left top;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 2s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_8{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/MLB/MLBplayerlist_mask_08.png');
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }           
+            }
+        }
+.marvel_title_type3{
+            position: absolute;
+            height: auto;
+            display: table;
+            margin: auto;
+            top: 9%;
+            // bottom: 0;
+            left:0;
+            right: 0;
+            width:74%;
+            height:164px;
+            overflow: hidden;
+            z-index: 9;
+            text-align: center;
+
+            p:nth-child(1){
+                font-size:64px;
+                color:#fff;
+                text-shadow: 0 10px 10px rgba(0,0,0,0.8);
+                opacity:0;
+                transform: translateY(100px);
+                animation:type_word_show 0.5s;
+                animation-delay:3.5s;
+                animation-fill-mode: forwards;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    max-width:281.59px;
+                    margin-left: -20px;
+                    filter:drop-shadow(0px 10px 10px rgba(0,0,0,0.8));
+                }
+            }
+            p:nth-child(2){
+                font-size:100px;
+                color:#fff;
+                text-shadow: 0 10px 10px rgba(0,0,0,0.8);
+                opacity:0;
+                transform: translateY(100px);
+                animation:type_word_show 0.5s;
+                animation-delay:4s;
+                animation-fill-mode: forwards;
+                overflow: hidden;
+
+                span{
+                    display:inline-block;
+
+                    @include phone-width{
+                        font-size: 70px;
+                    }
+                }
+                span:nth-child(2){
+                    font-size:90px;
+                    letter-spacing: -8px;
+
+                     @include phone-width{
+                        font-size: 66px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+        .w_sport_inside_title{
+            display:none;
+        }
+
+        @media screen and(max-width:375px){
+            .w_sport_inside_title{
+                position: relative;
+                height:100vh;
+                display:flex;
+                .w_mlb_logo{
+                    
+                    display:flex;
+                    flex-wrap:wrap;
+                    text-align: center;
+                    img{
+                        position: absolute;
+                        left:50%;
+                        margin-left:-100px;
+                        top:40%;
+                    }
+                    span{
+                        position: absolute;
+                        left:50%;
+                        margin-left:-160px;
+                        top:60%;
+                        font-size:40px;
+                        color:white;
+                        font-weight: bold;
+                    }
+                    p{
+                    
+                        font-size:48px;
+                        color:white;
+                        font-weight: bold;  
+                    }
+                }
+            }
+
+        }
+
+        
+        

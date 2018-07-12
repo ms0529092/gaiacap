@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: skyblue;
+            height: 90vh;
+        }
+
+        .dall {
+            display: flex;
+        }
+
+        .d1 {
+            display: inline-block;
+            background-color: skyblue;
+            height: 90vh;
+            
+            width: 1000px;
+        }
+
+        .d2 {
+            display: inline-block;
+            background-color: purple;
+            height: 90vh;
+            
+            width: 1000px;
+        }
+
+        .d3 {
+            display: inline-block;
+            background-color: brown;
+            height: 90vh;
+            width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dall">
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+
+        // $(window).scroll(function () {
+        //     // Returns height of browser viewport
+        //     var window_height = $(window).height();//螢幕高度
+
+        //     var window_scrollTop = $(window).scrollTop();//現在旋轉的高度
+
+        //     // Returns height of HTML document
+        //     var document_height = $(document).height();//總高
+
+        //     console.log(window_height);
+        //     console.log(window_scrollTop);
+        //     console.log(document_height);
+
+        //     if (window_height + window_scrollTop == document_height) {
+        //         // alert('到底部觸發ajax');
+        //     }
+
+        // });
+        var timer;
+        function MouseWheel(e) {
+
+            window.clearTimeout(timer);
+
+            timer = window.setTimeout(function () {
+            
+                e = e || window.event;
+                console.log(['scrolled ', ((e.wheelDelta <= 0 || e.detail > 0) ? 'VVVV' : '^^^^')].join(''));
+            }, 1000)
+        }
+
+        // hook event listener on window object
+        if ('onmousewheel' in window) {
+            window.onmousewheel = MouseWheel;
+        } else if ('onmousewheel' in document) {
+            document.onmousewheel = MouseWheel;
+        } else if ('addEventListener' in window) {
+            window.addEventListener("mousewheel", MouseWheel, false);
+            window.addEventListener("DOMMouseScroll", MouseWheel, false);
+        }
+
+
+    </script>
+</body>
+
+</html>

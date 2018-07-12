@@ -1,0 +1,1595 @@
+/*-----動畫*/
+@keyframes mask_delete_height{
+    0%{height:100%;}
+    100%{height:0;}
+}
+@keyframes type_word_show{
+    0%{ opacity:0;transform: translateY(100px);}
+    100%{ opacity:1;transform: translateY(0px);}
+}
+// @keyframes marvel1_pic_show{
+//     0%{width:0%;height:5px;}
+//     50%{width:100%;height:5px;}
+//     100%{width:100%;height:692px;}
+// }
+
+@keyframes marvel1_text_show{
+    0%{opacity: 0;transform: translate3d(0px,45px,0px);}
+    100%{opacity: 1;transform: translate3d(0px,0px,0px);}
+}
+
+/*-----動畫*/
+
+/*------RWD*/
+$pc-screen:1903px;
+$phone-screen:375px;
+@mixin phone-width(){
+    @media screen and (max-width:$phone-screen){
+        @content;
+    }
+}$phone-screen:375px;
+@mixin phone-width(){
+    @media screen and (max-width:$phone-screen){
+        @content;
+    }
+}
+
+ @media screen and (max-width:375px){
+        .marvelpage_banner{
+            display:none;
+        }
+    }
+
+/*------RWD*/
+
+.marvelpage{
+
+        width:100%;
+        height:auto;
+    .marvelpage_banner{
+            width: 100%;
+            height: 989px;
+            background-image: url('/images/marvel_banner_background.jpg');
+            background-position: center center;
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+        .backmask{
+                width:100%;
+                height:989px;
+                background-color:#000;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                opacity: .2;
+                z-index: 9;
+
+            .line_first{
+
+                display: inline-block;
+                width:13%;
+                height:100%;
+                position: relative;
+
+                &:after{
+                    transform: scaleY(1);
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-right: 1px solid #e1e1e1;
+                }
+            }
+            .line_second{
+                display: inline-block;
+                width:37%;
+                height:100%;
+                position: relative;
+
+                &:after{
+                    transform: scaleY(1);
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-right: 1px solid #e1e1e1;
+                }
+            }
+            .line_third{
+                display: inline-block;
+                width:37%;
+                height:100%;
+                position: relative;
+
+                &:after{
+                    transform: scaleY(1);
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-right: 1px solid #e1e1e1;
+                }
+            }
+            .line_center{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background-color: #e1e1e1;
+            }
+        }
+        .mask_background{
+            width:100%;
+            height: 989px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            .mask_box1{
+                width:13%;
+                height:50%;
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                transition: all 0.35s;
+            }
+            .mask_box2{
+                width:37%;
+                height:50%;
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                transition: all 0.35s;
+            }
+
+            .mask_1{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_2{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/marvel_mask01.png');
+                    background-position: right bottom;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 2s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_3{
+                 position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/marvel_mask02.png');
+                    background-position: left bottom;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 1s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_4{
+                 position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_5{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_6{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/marvel_mask03.png');
+                    background-position: right top;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 1s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_7{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/marvel_mask04.png');
+                    background-position: left top;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 2s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_8{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }           
+            }
+        }
+        .marvel_title_type{
+            position: absolute;
+            height: auto;
+            display: table;
+            margin: auto;
+            top: 22%;
+            bottom: 0;
+            left:0;
+            right: 0;
+            width:74%;
+            height:164px;
+            overflow: hidden;
+            z-index: 9;
+            text-align: center;
+
+            p:nth-child(1){
+                font-size:64px;
+                color:#fff;
+                text-shadow: 0 10px 10px rgba(0,0,0,0.8);
+                opacity:0;
+                transform: translateY(100px);
+                animation:type_word_show 0.5s;
+                animation-delay:3.5s;
+                animation-fill-mode: forwards;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    max-width:281.59px;
+                    margin-left: -20px;
+                    filter:drop-shadow(0px 10px 10px rgba(0,0,0,0.8));
+                }
+            }
+            p:nth-child(2){
+                font-size:100px;
+                color:#fff;
+                text-shadow: 0 10px 10px rgba(0,0,0,0.8);
+                opacity:0;
+                transform: translateY(100px);
+                animation:type_word_show 0.5s;
+                animation-delay:4s;
+                animation-fill-mode: forwards;
+                overflow: hidden;
+
+                span{
+                    display:inline-block;
+
+                    @include phone-width{
+                        font-size: 70px;
+                    }
+                }
+                span:nth-child(2){
+                    font-size:90px;
+                    letter-spacing: -8px;
+
+                     @include phone-width{
+                        font-size: 66px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+    
+    .marvel_section1{
+        width:100%;
+        padding:148.5px 0; 
+
+
+        .marvel_section1_in{
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            width:100%;
+            max-width: 1408px;
+            height: 70%;
+            margin: auto;
+            z-index:9;
+
+            @include phone-width{
+                flex-direction: column-reverse;
+            }
+
+            .marvel_section1_text{
+                width:100%;
+                max-width: 704px;
+                height:auto;
+                position: relative;
+                z-index: 9;
+                
+                @include phone-width{
+                    margin-top: 50px;
+                }
+
+                h3{
+                    width: 100%;
+                    text-align:left;
+                    opacity:0;
+                    animation: marvel1_text_show 0.35s;
+                    animation-delay: 1s;
+                    animation-fill-mode: forwards;
+                    
+
+                    p:nth-child(1){
+                        display: inline;
+                        font-size:30px;
+                        font-weight: 900;
+                        letter-spacing: -2px;
+                        border-bottom: 5px solid #cc0033;
+                    }
+                    p:nth-child(2){
+                        font-size:100px;
+                        letter-spacing: -8px;
+                        padding-top:5%;
+
+                        @include phone-width{
+                            font-size: 58px;
+                            letter-spacing: -5px;
+                        }
+                    }
+                    p:nth-child(3){
+                        font-size:100px;
+                        letter-spacing: -8px;
+                        @include phone-width{
+                            font-size: 58px;
+                            letter-spacing: -5px;
+                        }
+                    }
+                }
+                div{
+                    width: 92%;
+                    margin-left:0;
+                    margin-top:8%;
+
+
+                    p{
+                    font-weight: 900;
+                    font-size: 20px;
+                    opacity:0;
+                    }
+                    P:nth-child(1){
+                        animation: marvel1_text_show 0.35s;
+                        animation-delay: 1s;
+                        animation-fill-mode: forwards;
+                    }
+                    p:nth-child(2){
+                        padding-top:20px;
+                        animation: marvel1_text_show 0.35s;
+                        animation-delay: 1.3s;
+                        animation-fill-mode: forwards;
+                    }
+                    p:nth-child(3){
+                        padding-top:20px;
+                        animation: marvel1_text_show 0.35s;
+                        animation-delay: 1.6s;
+                        animation-fill-mode: forwards;
+                    }
+                    p:nth-child(4){
+                        padding-top:20px;
+                        animation: marvel1_text_show 0.35s;
+                        animation-delay: 1.9s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+            .marvel_section1_pic{
+                width:100%;
+                max-width: 704px;
+                height:692px;
+                background-image:url('/images/marvel_make1.jpg');
+                background-position: center center;
+                background-size:cover;
+                position: relative;
+                z-index: 9;
+                animation: marvel1_pic_show 1s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+    .marvel_section2{
+        width:100%;
+        padding: 148.5px 0;
+        // background-color:#cc0033;
+
+        .marvel_section2_in{
+            display: flex;
+            justify-content:space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+            width:100%;
+            max-width: 1408px;
+            height:100%;
+            margin: auto;
+            position: relative;
+            z-index:9;
+
+            .marvel_section2_type1{
+                width:100%;
+                max-width:900px;
+                height:500px;
+                margin:0 auto 0 37%;
+                // background-color: #000;
+
+                .marvel_section2_type1_in{
+                    width:100%;
+                    height:100%;
+                    position: relative;
+
+                    img{
+                        height:100%;
+                        position: absolute;
+                        margin: auto;
+                        top: 0;
+                        bottom: 0;
+                    }
+                    .polygan_type{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top:0;
+                        left: 0;
+                        background-color: #fff;
+                        clip-path: polygon(0 0, 99% 11%, 87% 91%, 17% 100%);
+                        -webkit-clip-path: polygon(0 0, 99% 11%, 87% 91%, 17% 100%);
+                        
+                        .polygan_type_in{
+                            width: 42%;
+                            margin: auto;
+                            height: 66%;
+                            position: absolute;
+                            top: 0;
+                            left: 26%;
+                            right: 0;
+                            bottom: 0;
+
+                            h4{
+                                font-size: 40px;
+                                font-weight: 500;
+                                color:#808080;
+                                
+                                span:nth-child(1){
+                                    display:inline-block;
+                                    padding-left: 10px;
+                                }    
+                                span:nth-child(2){
+                                    display: inline-block;
+                                    letter-spacing:-3px;
+                                    padding-left: 10px;
+                                }
+                            }
+                            p{
+                                padding:10px;
+                                font-size: 20px;
+                                font-weight:500; 
+                                color:#808080;
+                                text-align: justify;
+                                text-justify: inter-ideograph;
+                                line-height: 30px;
+                            }
+                            input{
+                                width:150px;
+                                letter-spacing: 2px;
+                                font-size: 16px;
+                                font-weight:bold; 
+                                font-family: "微軟正黑體";
+                                background-color: #000;
+                                color:#fff;
+                                border:0;
+                                border-radius:5px;
+                                padding: 10px;    
+                                cursor: pointer;
+                                float: right; 
+                                margin-top: 10%;
+                            }
+                        }
+                        .fordeadpool{
+                            width:52%;
+                            left:13%;
+                        }
+                        .forhulk{
+                            left: 32%;
+                        }
+                    }
+                    .polygan_type_shadow{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top:20px;
+                        left:20px;
+                        background-color:rgba(0,0,0,0.2);
+                        clip-path: polygon(0 0, 99% 11%, 87% 91%, 17% 100%);
+                    }
+                }
+            }
+            .marvel_section2_type2{
+                width:100%;
+                max-width:750px;
+                height:500px;
+                margin: 5% 0 0 0;
+                // background-color: #000;
+
+                .marvel_section2_type2_in{
+                    width:100%;
+                    height:100%;
+                    position: relative;
+
+                    img{
+                        height:100%;
+                        position: absolute;
+                        margin: auto;
+                        top: 0;
+                        bottom: 0;
+                    }
+                    .polygan_type{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top:0;
+                        left: 0;
+                        background-color: #fff;
+                        clip-path: polygon(19% 19%, 83% 0, 100% 93%, 8% 81%);
+                        -webkit-clip-path: polygon(19% 19%, 83% 0, 100% 93%, 8% 81%);
+
+                        .polygan_type_in{
+                            width: 48%;
+                            margin: auto;
+                            height: 66%;
+                            position: absolute;
+                            top: 10%;
+                            left: 18%;
+                            right: 0;
+                            bottom: 0;
+
+                            h4{
+                                font-size: 40px;
+                                font-weight: 500;
+                                color:#808080;
+                                
+                                span:nth-child(1){
+                                    display:inline-block;
+                                    padding-left: 10px;
+                                }    
+                                span:nth-child(2){
+                                    display: inline-block;
+                                    letter-spacing:-3px;
+                                    padding-left: 10px;
+                                }
+                            }
+                            p{
+                                padding:10px;
+                                font-size: 20px;
+                                font-weight:500; 
+                                color:#808080;
+                                text-align: justify;
+                                text-justify: inter-ideograph;
+                                line-height: 30px;
+                            }
+                            input{
+                                width:150px;
+                                letter-spacing: 2px;
+                                font-size: 16px;
+                                font-weight:bold; 
+                                font-family: "微軟正黑體";
+                                background-color: #000;
+                                color:#fff;
+                                border:0;
+                                border-radius:5px;
+                                padding: 10px;    
+                                cursor: pointer;
+                                float: right; 
+                                margin-top: 10%;
+                            }
+                        }
+                        .forcaptain{
+                            top:4%;
+                            left:30%;
+                        }
+                    }
+                    .polygan_type_shadow{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top:20px;
+                        left:20px;
+                        background-color:rgba(0,0,0,0.2);
+                        clip-path: polygon(19% 19%, 83% 0, 100% 93%, 8% 81%);
+                        -webkit-clip-path: polygon(19% 19%, 83% 0, 100% 93%, 8% 81%);
+                    }
+                }
+            }
+            .forcaptain_type{
+                    max-width:900px;
+            }
+        }
+    }
+}
+
+///// VVVVV HANGLE
+
+/*-----動畫*/
+@keyframes mask_delete_height{
+    0%{height:100%;}
+    100%{height:0;}
+}
+@keyframes type_word_show{
+    0%{ opacity:0;transform: translateY(100px);}
+    100%{ opacity:1;transform: translateY(0px);}
+}
+@keyframes type_type_show{
+    0%{ opacity:0;transform: translateY(100px);}
+    100%{ opacity:1;transform: translateY(0px);}
+}
+ @keyframes marvel1_pic_show{
+     0%{transform: translateX(100%) rotate(50deg);opacity: 0;}
+     100%{transform: translateX(0%) rotate(0deg);opacity: 1;}
+}
+
+@keyframes marvel1_text_show{
+    0%{opacity: 0;transform: translate3d(0px,45px,0px);}
+    100%{opacity: 1;transform: translate3d(0px,0px,0px);}
+}
+@keyframes marvelpolyanimate{
+    0%{
+        -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+
+    }
+    25%{
+        clip-path: polygon(0 0, 99% 11%,0 0, 0 0);
+        -webkit-clip-path: polygon(0 0, 99% 11%,0 0, 0 0);
+    }
+    50%{
+         clip-path: polygon(0 0, 99% 11%, 87% 91%, 0 0);
+        -webkit-clip-path: polygon(0 0, 99% 11%, 87% 91%, 0 0);
+    }
+    100%{
+        clip-path: polygon(0 0, 99% 11%, 87% 91%, 17% 100%);
+        -webkit-clip-path: polygon(0 0, 99% 11%, 87% 91%, 17% 100%);
+    }
+}
+@keyframes marvelpolyanimates{
+    0%{
+         clip-path: polygon(19% 19%, 0 0, 0 0, 0 0);
+        -webkit-clip-path: polygon(19% 19%, 0 0, 0 0, 0 0);
+    }
+    25%{
+         clip-path: polygon(19% 19%, 83% 0, 0 0, 0 0);
+        -webkit-clip-path: polygon(19% 19%, 83% 0, 0 0, 0 0);
+    }
+    50%{
+        clip-path: polygon(19% 19%, 83% 0, 100% 93%, 0 0);
+        -webkit-clip-path: polygon(19% 19%, 83% 0, 100% 93%, 0 0);
+    }
+    100%{
+        clip-path: polygon(19% 19%, 83% 0, 100% 93%, 8% 81%);
+        -webkit-clip-path: polygon(19% 19%, 83% 0, 100% 93%, 8% 81%);
+    }
+}
+/*-----動畫*/
+/*------RWD*/
+$pc-screen:1903px;
+$phone-screen:375px;
+@mixin phone-width(){
+    @media screen and (max-width:$phone-screen){
+        @content;
+    }
+}
+/*------RWD*/
+
+.h_marvelpage{
+
+        width:100%;
+        height:auto;
+    .marvelpage_banner{
+            width: 100%;
+            height: 989px;
+            background-image: url('/images/marvel_banner_background.jpg');
+            background-position: center center;
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+        .backmask{
+                width:100%;
+                height:989px;
+                background-color:#000;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                opacity: .2;
+                z-index: 9;
+
+                // @include phone-width{
+                //     display: none;
+                // }
+
+            .line_first{
+
+                display: inline-block;
+                width:13%;
+                height:100%;
+                position: relative;
+
+                &:after{
+                    transform: scaleY(1);
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-right: 1px solid #e1e1e1;
+                }
+            }
+            .line_second{
+                display: inline-block;
+                width:37%;
+                height:100%;
+                position: relative;
+
+                &:after{
+                    transform: scaleY(1);
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-right: 1px solid #e1e1e1;
+                }
+            }
+            .line_third{
+                display: inline-block;
+                width:37%;
+                height:100%;
+                position: relative;
+
+                &:after{
+                    transform: scaleY(1);
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-right: 1px solid #e1e1e1;
+                }
+            }
+            .line_center{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background-color: #e1e1e1;
+            }
+        }
+        .mask_background{
+            width:100%;
+            height: 989px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            .mask_box1{
+                width:13%;
+                height:50%;
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                transition: all 0.35s;
+            }
+            .mask_box2{
+                width:37%;
+                height:50%;
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                transition: all 0.35s;
+            }
+
+            .mask_1{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_2{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/marvel_mask01.png');
+                    background-position: right bottom;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 2s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_3{
+                 position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/marvel_mask02.png');
+                    background-position: left bottom;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 1s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_4{
+                 position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_5{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_6{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/marvel_mask03.png');
+                    background-position: right top;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 1s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_7{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/marvel_mask04.png');
+                    background-position: left top;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 2s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_8{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }           
+            }
+        }
+        .marvel_title_type{
+            position: absolute;
+            height: auto;
+            display: table;
+            margin: auto;
+            top: 22%;
+            bottom: 0;
+            left:0;
+            right: 0;
+            width:74%;
+            height:164px;
+            overflow: hidden;
+            z-index: 9;
+            text-align: center;
+
+            p:nth-child(1){
+                font-size:64px;
+                color:#fff;
+                text-shadow: 0 10px 10px rgba(0,0,0,0.8);
+                opacity:0;
+                transform: translateY(100px);
+                animation:type_word_show 0.5s;
+                animation-delay:3.5s;
+                animation-fill-mode: forwards;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    max-width:281.59px;
+                    margin-left: -20px;
+                    filter:drop-shadow(0px 10px 10px rgba(0,0,0,0.8));
+                }
+            }
+            p:nth-child(2){
+                font-size:100px;
+                color:#fff;
+                text-shadow: 0 10px 10px rgba(0,0,0,0.8);
+                opacity:0;
+                transform: translateY(100px);
+                animation:type_word_show 0.5s;
+                animation-delay:4s;
+                animation-fill-mode: forwards;
+                overflow: hidden;
+
+                span{
+                    display:inline-block;
+
+                    @include phone-width{
+                        font-size: 70px;
+                    }
+                }
+                span:nth-child(2){
+                    font-size:90px;
+                    letter-spacing: -8px;
+
+                     @include phone-width{
+                        font-size: 66px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+    
+    .marvel_section1{
+        width:100%;
+        padding:148.5px 0;
+        position: relative;
+        overflow: hidden;
+        @include phone-width{
+            padding: 50px 0;
+        }
+
+        .marvel_section1_in{
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            width:100%;
+            max-width: 1408px;
+            height: 70%;
+            margin: auto;
+            z-index:9;
+
+            @include phone-width{
+                flex-direction: column-reverse;
+            }
+
+            .marvel_section1_text{
+                width:100%;
+                max-width: 704px;
+                height:auto;
+                position: relative;
+                z-index: 9;
+                
+                @include phone-width{
+                    margin: 50px auto 0 auto;
+                    width:347px;
+                }
+
+                h3{
+                    width: 100%;
+                    text-align:left;
+                    opacity:0;
+                    position: relative;
+                    overflow: hidden;
+                    @include phone-width{
+                        opacity:1;
+                    }
+                    
+
+                    p:nth-child(1){
+                        display: inline;
+                        font-size:30px;
+                        font-weight: 900;
+                        letter-spacing: -2px;
+                        border-bottom: 5px solid #cc0033;
+                    }
+                    p:nth-child(2){
+                        font-size:100px;
+                        letter-spacing: -8px;
+                        padding-top:5%;
+
+                        @include phone-width{
+                            font-size: 54px;
+                            letter-spacing: -5px;
+                        }
+                    }
+                    p:nth-child(3){
+                        font-size:100px;
+                        letter-spacing: -8px;
+                        @include phone-width{
+                            font-size: 54px;
+                            letter-spacing: -5px;
+                        }
+
+                    }
+                }
+                div{
+                    width: 92%;
+                    margin-left:0;
+                    margin-top:8%;
+
+
+                    p{
+                    font-weight: 900;
+                    font-size: 20px;
+        
+                     span{
+                         text-align: justify;
+                         opacity:0;
+                         transform: translateY(100px);
+
+                         @include phone-width{
+                            opacity:1;
+                            transform: translateY(0px);
+                         }
+                     }
+                    }
+                    p:nth-child(2){
+                        padding-top:20px;
+                    }
+                    p:nth-child(3){
+                        padding-top:20px;
+                    }
+                    p:nth-child(4){
+                        padding-top:20px;
+                    }
+                }
+            }
+            .marvel_section1_pic{
+                width:100%;
+                max-width: 704px;
+                height:692px;
+                background-image:url('/images/marvel_make1.jpg');
+                background-position: center center;
+                background-size:cover;
+                position: relative;
+                z-index: 9;
+                transform-origin:100% 100%;
+                transform:translateX(100%) rotate(50deg);
+                opacity:0;
+
+                @include phone-width{
+                    transform:translateX(0) rotate(0deg);
+                    opacity:1;
+                    width:347px;
+                    height:208px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .marvel_section2{
+        width:100%;
+        padding-bottom:148.5px;
+        // background-color:#cc0033;
+
+        @include phone-width{
+            padding: 0;
+        }
+
+        .marvel_section2_type{
+            width:100%;
+            max-width: 1408px;
+            margin: 0 auto;
+            padding:0 0 5% 0;
+            position: relative;
+            z-index:9;
+
+            .marvel_section2_type_in{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                P:nth-child(1){
+                    font-size: 80px;
+                    letter-spacing: -5px;
+
+                    @include phone-width{
+                        font-size: 54px;
+                        margin:5% auto;
+                    }
+                }
+                P:nth-child(2){
+                    width: 50%;
+                    text-align: justify;
+                    letter-spacing: -1px;
+                    font-size: 28px;
+                    font-weight: 500;
+                    line-height:40px;
+
+                    @include phone-width{
+                        font-size: 20px;
+                        line-height:20px;
+                        width:347px;
+                        margin: auto;
+                    }
+                }
+            }
+            &:before{
+                content: "";
+                width:100%;
+                height:8px;
+                background-color: #000;
+                display: block;
+                margin-bottom: 2%;
+                transition:all 0.5s;
+            }
+        }
+        .marvel_section2_in{
+            display: flex;
+            justify-content:space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+            width:100%;
+            max-width: 1408px;
+            height:100%;
+            margin: auto;
+            position: relative;
+            z-index:9;
+
+            .marvel_section2_type1{
+                width:100%;
+                max-width:900px;
+                height:500px;
+                margin:0 auto 0 37%;
+                // background-color: #000;
+
+                @include phone-width{
+                    width: 347px;
+                    height:732px;
+                    margin: 0 auto;
+                }
+
+                .marvel_section2_type1_in{
+                    width:100%;
+                    height:100%;
+                    position: relative;
+
+                    img{
+                        height:100%;
+                        position: absolute;
+                        margin: auto;
+                        top: 0;
+                        bottom: 0;
+                        opacity:0;
+                        transform:translateX(100px);
+                        transform: all 0.5s;
+
+                        @include phone-width{
+                            height:35%;
+                            left: 0;
+                            right:0;
+                            bottom:auto;
+                            top:3%;
+                            opacity:1;
+                            transform:translateX(0px);
+                        }
+                    }
+                    .polygan_type{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top:0;
+                        left: 0;
+                        background-color: #fff;
+                        -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+
+                        @include phone-width{
+                             -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                        }
+                        
+                        .polygan_type_in{
+                            width: 42%;
+                            margin: auto;
+                            height: 66%;
+                            position: absolute;
+                            top: 0;
+                            left: 26%;
+                            right: 0;
+                            bottom: 0; 
+
+                            @include phone-width{
+                                width: 100%;
+                                height: auto;
+                                left: 0;
+                                top: 48%;
+                            }
+
+                            h4{
+                                font-size: 40px;
+                                font-weight: 500;
+                                color:#808080;
+                                
+                                span:nth-child(1){
+                                    display:inline-block;
+                                    padding-left: 10px;
+                                }    
+                                span:nth-child(2){
+                                    display: inline-block;
+                                    letter-spacing:-3px;
+                                    padding-left: 10px;
+                                }
+                            }
+                            p{
+                                padding:10px;
+                                font-size: 20px;
+                                font-weight:500; 
+                                color:#808080;
+                                text-align: justify;
+                                text-justify: inter-ideograph;
+                                line-height: 30px;
+                            }
+                             .polygan_type_in_click{
+                                width: 90%;
+                                height: auto;
+                                display: block;
+                                margin: auto;
+
+                                input{
+                                    width:150px;
+                                    letter-spacing: 2px;
+                                    font-size: 16px;
+                                    font-weight:bold; 
+                                    font-family: "微軟正黑體";
+                                    background-color: #000;
+                                    color:#fff;
+                                    border:0;
+                                    border-radius:5px;
+                                    padding: 10px;    
+                                    cursor: pointer;
+                                    float: right; 
+                                    margin-top: 10%;
+                                }
+                                 input:nth-child(1){
+                                    margin-left:10px;
+                                 }
+                                 @include phone-width{
+                                     input:nth-child(1){
+                                        display: none;
+                                     }
+                                 }
+                            }
+                        }
+                        .fordeadpool{
+                            width:52%;
+                            left:13%;
+
+                             @include phone-width{
+                                left:0;
+                                top:42%;
+                                width: 100%;
+                            }
+
+                        }
+                        .forhulk{
+                            left: 32%;
+
+                            @include phone-width{
+                                left:0;
+                            }
+                        }
+                    }
+                    .polygan_type_shadow{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top:20px;
+                        left:20px;
+                        background-color:rgba(0,0,0,0.2);
+                       -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+
+                        @include phone-width{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .marvel_section2_type2{
+                width:100%;
+                max-width:750px;
+                height:500px;
+                margin: 5% 0 0 0;
+                // background-color: #000;
+
+                @include phone-width{
+                    width:347px;
+                    height:672px;
+                    margin:5% auto;
+                }
+
+                .marvel_section2_type2_in{
+                    width:100%;
+                    height:100%;
+                    position: relative;
+
+                    img{
+                        height:100%;
+                        position: absolute;
+                        margin: auto;
+                        top: 0;
+                        bottom: 0;
+                        opacity: 0;
+
+                        @include phone-width{
+                            height:35%;
+                            left: 0;
+                            right:0;
+                            bottom:auto;
+                            top:3%;
+                            opacity: 1;
+                        }
+                    }
+                    .polygan_type{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top:0;
+                        left: 0;
+                        background-color: #fff;
+                        -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+
+                        @include phone-width{
+                             -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                        }
+
+                        .polygan_type_in{
+                            width: 48%;
+                            margin: auto;
+                            height: 66%;
+                            position: absolute;
+                            top: 10%;
+                            left: 18%;
+                            right: 0;
+                            bottom: 0;
+
+                            @include phone-width{
+                                width:100%;
+                                height: auto;
+                                left:0;
+                                top:40%;
+                            }
+
+                            h4{
+                                font-size: 40px;
+                                font-weight: 500;
+                                color:#808080;
+                                
+                                span:nth-child(1){
+                                    display:inline-block;
+                                    padding-left: 10px;
+                                }    
+                                span:nth-child(2){
+                                    display: inline-block;
+                                    letter-spacing:-3px;
+                                    padding-left: 10px;
+                                }
+                            }
+                            p{
+                                padding:10px;
+                                font-size: 20px;
+                                font-weight:500; 
+                                color:#808080;
+                                text-align: justify;
+                                text-justify: inter-ideograph;
+                                line-height: 30px;
+                            }
+                            .polygan_type_in_click{
+                                width: 90%;
+                                height: auto;
+                                display: block;
+                                margin: auto;
+
+                                input{
+                                    width:150px;
+                                    letter-spacing: 2px;
+                                    font-size: 16px;
+                                    font-weight:bold; 
+                                    font-family: "微軟正黑體";
+                                    background-color: #000;
+                                    color:#fff;
+                                    border:0;
+                                    border-radius:5px;
+                                    padding: 10px;    
+                                    cursor: pointer;
+                                    float: right; 
+                                    margin-top: 10%;
+                                }
+                                 input:nth-child(1){
+                                    margin-left:10px;
+                                 }
+
+                                 @include phone-width{
+                                     input:nth-child(1){
+                                        display: none;
+                                     }
+                                 }
+                            }
+                        }
+                        .forcaptain{
+                            top:4%;
+                            left:30%;
+
+                            @include phone-width{
+                                left:0;
+                                top:40%;
+                            }
+                        }
+                    }
+                    .polygan_type_shadow{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top:20px;
+                        left:20px;
+                        background-color:rgba(0,0,0,0.2);
+                        -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+
+
+                        @include phone-width{
+                            display:none;
+                        }
+                    }
+                }
+            }
+            .forcaptain_type{
+                    max-width:900px;
+            }
+        }
+    }
+}
+
+.pic_fly{
+    animation: marvel1_pic_show 1s;
+    animation-fill-mode: forwards;
+}
+.type_animate{
+    animation:type_type_show 1s;
+    animation-fill-mode:forwards;
+}
+.type_text_animate{
+    animation:type_type_show 1s;
+    animation-delay: 1s;
+    animation-fill-mode:forwards;
+}
+.pic_animate{
+    animation:marvel1_pic_show 0.5s;
+    animation-delay:1s;
+    animation-fill-mode:forwards;
+}
+.polygon_animate{
+    animation:marvelpolyanimate 0.5s;
+    animation-fill-mode:forwards;
+}
+.polygan_animate2{
+    animation:marvelpolyanimates 0.5s;
+    animation-fill-mode: forwards;
+}

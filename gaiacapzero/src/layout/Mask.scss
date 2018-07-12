@@ -1,0 +1,26 @@
+.w_big_mask{
+    height:100vh;
+    width:100%;
+    max-width:1920px;
+    z-index:950;
+    position: absolute;
+    top:0;
+    right:0;
+    cursor: pointer;
+    .w_mask{
+        background-color:skyblue;
+        opacity: 0;
+        height:100vh;
+        width:100%;
+        max-width:1920px;
+        clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 12% 21%, 91% 20%, 83% 76%, 51% 58%, 0 100%, 100% 100%, 100% 0%);
+        
+    }
+}
+
+@media screen and (max-width:375px){
+    .w_mask{
+        clip-path: polygon(0% 0%, 0% 100%, 14% 100%, 14% 18%, 87% 18%, 87% 86%, 13% 86%, 13% 100%, 100% 100%, 100% 0%);
+        -webkit-clip-path: polygon(0% 0%, 0% 100%, 14% 100%, 14% 18%, 87% 18%, 87% 86%, 13% 86%, 13% 100%, 100% 100%, 100% 0%);
+    }
+}

@@ -1,0 +1,293 @@
+/*--------------------------------------------------------購物車*/
+#shoppingcart_first{
+        width: 100%;
+        max-width: 1763px;
+        margin:0px auto 54px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /*-------------------------------------商品列表*/
+        .project_list_body{
+            width:72%;
+            max-width: 1763px;
+            height:100%;
+
+            .project_list_body_type{
+                width: 100%;
+                border-bottom:1px solid #e1e1e1;
+
+                span{
+                    &:nth-child(1){
+                        width:39%;
+                        text-align: left;
+                    }
+                    width:15%;
+                    padding-bottom: 13px;
+                    display: inline-block;
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+            .project_list_body_product{
+                width:100%;
+                height:auto;
+
+                .product_oce{
+                    width:100%;
+                    height: 152px;
+                    padding:16px 0;
+                    border-bottom:1px solid #e1e1e1 ;
+                    display:flex;
+
+                    div{
+                        width:15%;
+                        height:100%;
+                        display: table;
+                        border-right:1px solid #e1e1e1;
+                    }
+                    span{
+                        display: table-cell;
+                        vertical-align: middle;
+                        text-align: center;
+                        font-size: 20px;
+                    }
+
+                    .product_oce_img{
+                        width:39%;
+                        height:152px;
+
+                        img{
+                            width:100%;
+                            max-width:152px;
+                            float: left;
+                        }
+                        div.product_oce_img_type{
+                            border:0;
+                            width: auto;
+                            height: auto;
+                            margin:auto 10px;
+                            float: left;
+                            padding:30px 0;
+
+                            span{
+                                font-size:16px;
+                                font-weight: bold; 
+                                display: block;
+                                text-align: left;
+                            }
+                           p{
+                                font-size:20px;
+                                font-weight: bold; 
+                                display: block;
+                                text-align: left;
+                                &:nth-child(3){
+                                    padding-top:10px; 
+                                }
+                                span{
+                                    color:#808080;
+                                }
+                            }
+                        }
+                    }
+                    .product_oce_delete{
+                        display: table;
+                        text-align: center;
+                        .product_oce_delete_icon{
+                            border: 0;
+                            display: table-cell;
+                            vertical-align: middle;
+                            cursor: pointer;
+
+                            img{
+                                border-radius: 50%;
+                                border:1px solid #000;
+                                path{
+                                    fill:#cc0033;
+                                    background-color: #cc0033;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /*-------------------------------------商品列表*/
+        /*-----------------------------------------側欄*/
+        .next_list_body{
+            width:26%;
+            min-width:375px;
+            height:100%;
+
+            .next_list_body_in{
+                 width:100%;
+                 height: 117px;
+                 border:1px solid #e1e1e1;
+                 box-sizing:border-box;
+                 display: table;
+                 span{
+                     &:nth-child(1){
+                     font-size: 20px;
+                     font-weight:bold;
+                     }
+                     font-size: 16px;
+                 }
+                 &:nth-child(2){
+                      margin-top:27px;
+                 }
+                 &:nth-child(3){
+                      margin-top:27px;
+                 }
+            }
+            .soldback{
+                display: table-cell;
+                vertical-align: middle;
+                padding-left: 40px;
+             }
+            .bagsend{
+               display: table-cell;
+               vertical-align: middle;
+               padding:0 40px;
+             }
+             .money_toto_body{
+                 width:100%;
+                 height:342px;
+
+                 .money_in{
+                     width:86%;
+                     height:252px;
+                     margin: 0 auto;
+                     
+                     .money_type{
+                         display:table;
+                         width: 100%;
+                         height:65px;
+                         border-bottom:1px solid #e1e1e1;
+
+                         span{
+                             font-size: 30px;
+                             font-weight: 900;
+                             display: table-cell;
+                             vertical-align: middle;
+                             
+                         }
+                     }
+                     ul.money_match{
+                         width: 100%;
+                         margin-top:48px; 
+                         li{
+                             margin-top: 12px;
+                         }
+                         label{
+                             width: 100%;
+                             font-size:20px;
+                             .price{
+                                 font-size:20px;
+                                 font-weight:bold;
+                                 float: right;
+                             }
+                         }
+                         div.toto{
+                             margin-top: 12px;
+                             label{
+                                 span{
+                                     font-size:30px;
+                                     font-weight: bold;
+                                 }
+                             }
+                         }
+                     }
+                 }
+                 a{
+                    color:white;
+                    text-decoration:none;
+                 }
+                 .submit_button{
+                     width: 100%;
+                     height:90px;
+                     
+                     button{
+                         display:block;
+                         width: 100%;
+                         height:100%;
+                         border:0;
+                         background-color: #000;
+                         cursor: pointer;
+                         position: relative;
+                         transition: all 0.35s;
+                        
+                         
+                        
+                            span{
+                                color:#fff; 
+                                font-size: 30px;
+                                font-weight: 500;
+                                
+                             }
+                            
+                        
+                        &:hover{
+                            background-color:#333333;
+                        }
+                     }
+                 }
+             }
+        }
+        /*-----------------------------------------側欄*/
+}
+/*--------------------------------------------------------購物車*/
+@media screen and (max-width:1366px) {
+    #shoppingcart_first {
+        .project_list_body{
+            width:100%;
+        }
+
+        .next_list_body{
+            width:100%;
+            max-width: 960px;
+            margin:54px auto 0 auto;
+
+            #soldback,#bagsend{
+                display:none;
+            }
+        }
+    }
+}
+@media screen and (max-width:1020px) {
+    #shoppingcart_first { 
+        .project_list_body{
+            .project_list_body_type{
+                display: none;
+            }
+            .project_list_body_product{
+                .product_oce{
+                    height:auto;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    div{
+                       width:24%;
+                       height: 152px;
+                       &:last-child{
+                           border:0;
+                       }
+                    }
+                    .product_oce_img{
+                        width:100%;
+                        border:0;
+
+                        img{
+                        margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.w_shoppingfirst_input{
+    width: 34px;
+    height: 30px;
+    font-size: 24px;
+    padding-left: 20px;
+}

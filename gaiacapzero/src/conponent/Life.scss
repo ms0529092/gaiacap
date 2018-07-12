@@ -1,0 +1,65 @@
+$font:48px;
+$margincenter:0 auto;
+
+.w_life_container{
+    align-content: center;
+    max-width:1920px;
+    width:100%;
+    height: 900px;
+    align-items:center;
+    position: relative;
+}
+.w_life_best{
+    .w_life_area1{
+        
+        background-image:url(/images/life/Hip-Hop-Wallpaper7.jpg) ;
+        background-position: center center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        // display:none;
+                
+    }
+}
+
+
+.w_life_homeback{
+    position: absolute;
+    // max-width:1920px;
+    width:100%;
+    height:100vh;
+    flex-wrap:wrap;
+
+}
+
+.w_acenter{
+    align-items: center;
+    flex-direction:column;
+}
+
+
+.w_life_p_large{
+    display: inline-block;
+    font-size:$font;
+    margin:$margincenter;
+    padding:10px;
+}
+
+
+@media screen and(max-width:375px){
+    .w_life_container{
+        align-content: center;
+        max-width:1903px;
+        width:100%;
+        height: 611px;
+        align-items:center;
+        position: relative;
+    }
+    .w_life_best{
+        .w_life_area1{
+    
+            display:flex;
+          
+        }
+    }
+    
+}

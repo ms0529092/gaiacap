@@ -1,0 +1,377 @@
+@keyframes ani05{
+    0%{ opacity: 0;transform: translate(-200px,0)}
+    100%{opacity:1;transform: translate(0,0)}
+  }
+
+@keyframes ani06{
+    0%{ opacity: 0;transform: translate(-100px,0)}
+    100%{opacity:1;transform: translate(0,0)}
+}  
+.a_aboutPage{
+    max-width: 1903px;
+    width: 100%;
+    height: 909px;
+    .a_aboutBanner{
+        width: 100%;
+        height: 100vh;
+        background: url(/images/GAIA_CAP_aboutgaiacap_banner_background.jpg) no-repeat center;
+    }
+    .a_aboutProject{
+        margin-top: 80px;
+        margin-left: 241px;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        .a_aboutIdea_left{
+            h2{
+                font-size: 32px;
+                text-decoration: underline;
+                letter-spacing: -3px;
+                animation: ani05 1s;
+            }
+            span{
+                margin: 80px;
+                width: 500px;
+                h3{
+                    font-size: 100px;
+                    letter-spacing: -10px;                   
+                } 
+            }            
+            p{
+                font-size: 16px;
+                margin-top: 16px;
+                width: 557px;
+                line-height: 32px;
+                font-weight: bold;               
+            }
+        }
+        .a_aboutIdea_right{            
+            img{
+                width: 875px;
+                height: 492px;
+            }
+        }
+    }
+    .a_aboutProject2{
+        margin-top: 80px;
+        margin-left: 241px;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        .a_aboutService_left{  
+            h2{
+                font-size: 32px;
+                text-decoration: underline;
+                letter-spacing: -3px;
+                animation: ani05 1s;
+            }
+            span{
+                margin: 80px;
+                width: 500px;
+                h3{
+                    font-size: 100px;
+                    letter-spacing: -10px;                   
+                } 
+            }            
+            p{
+                font-size: 16px;
+                margin-top: 16px;
+                width: 557px;
+                line-height: 32px;
+                font-weight: bold;               
+            }
+        }
+        .a_aboutService_right{            
+            img{
+                width: 875px;
+                height: 492px;
+            }
+        }
+    }
+}
+        
+
+@media screen and (max-width:375px){
+    .a_aboutPage{
+        max-width: 375px;
+        width: 100%;
+        height: 100vh;
+        .a_aboutBanner{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url(/images/GAIA_CAP_aboutgaiacap_banner_background.jpg) no-repeat center;
+            img{
+                position: absolute;
+                width: 200%;
+                top: 150px;
+                left: -180px;
+            }
+        }
+        .a_aboutProject{
+            margin-top: 70px;
+            margin-left: 14px;
+            margin-right: 14px;
+            height: 100vh;
+            display: block;
+            justify-content: space-between;
+            .a_aboutIdea_left{
+                h2{
+                    margin-top: 80px;
+                    font-size: 32px;
+                    text-decoration: underline;
+                    letter-spacing: -2px;
+                    animation: ani05 1s;
+                }
+                span{
+                    margin-top: 80px;
+                    width: 500px;
+                    h3{
+                        font-size: 50px;
+                        letter-spacing: -5px;                   
+                    } 
+                }            
+                p{
+                    font-size: 16px;
+                    margin-top: 32px;
+                    width: 347px;
+                    line-height: 32px;
+                    font-weight: bold; 
+                    text-align: justify;              
+                }
+            }
+            .a_aboutIdea_right{  
+                margin-top: 20px;              
+                img{
+                    width: 350px;
+                    height: 197px;
+                }
+            }
+        }
+        .a_aboutProject2{
+            margin-top: 70px;
+            margin-left: 14px;
+            margin-right: 14px;
+            height: 100vh;
+            display: block;
+            justify-content: space-between;
+            .a_aboutService_left{
+                h2{
+                    margin-top: 274px;
+                    font-size: 32px;
+                    text-decoration: underline;
+                    letter-spacing: -2px;
+                    animation: ani05 1s;
+                }
+                span{
+                    margin-top: 80px;
+                    width: 500px;
+                    h3{
+                        font-size: 50px;
+                        letter-spacing: -5px;                   
+                    } 
+                }            
+                p{
+                    font-size: 16px;
+                    margin-top: 32px;
+                    width: 347px;
+                    line-height: 32px;
+                    font-weight: bold; 
+                    text-align: justify;              
+                }
+            }
+            .a_aboutService_right{  
+                margin-top: 20px;
+                margin-left: 14px;
+                margin-right: 14px;
+                img{
+                    width: 375px;
+                    height: 210px;
+                }
+            }        
+        } 
+    }
+}
+// --------------store---------------
+.a_storeProject{
+    margin-top: -20px;
+    margin-left: 241px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    .a_store_left{
+        position: relative;
+        margin-top: 200px;
+        h2{
+            font-size: 32px;
+            text-decoration: underline;
+            letter-spacing: -3px;
+        }
+        #a_store1{
+            position: absolute;
+            bottom: 80px;
+        }
+        #a_store2{
+            display: none;
+            position: absolute;
+            bottom: 80px;
+        }
+        #a_store3{
+            display: none;
+            position: absolute;
+            bottom: 80px;
+        }
+        #a_store4{
+            display: none;
+            position: absolute;
+            bottom: 80px;
+        }
+        #a_store5{
+            display: none;
+            position: absolute;
+            bottom: 80px;
+        }
+        span{
+            margin: 80px;
+            width: 620px;
+            h2{
+                font-size: 32px;
+                text-decoration: underline;
+                letter-spacing: -3px;
+                animation: ani05 1s;
+            }
+            h3{
+                margin-top:30px; 
+                font-size: 36px;
+                letter-spacing: 1px; 
+                animation: ani05 2s;
+            } 
+            iframe{
+                margin-top: 50px;
+                animation: ani05 2.5s;
+            }
+        }          
+    }
+    .a_store_right{
+        background: #222;
+        height: 100vh;
+        width: 50%;
+        .a_store_news{
+            z-index: 999;
+            ul{
+                margin-left: 77px;
+                margin-top: 185px;
+                li{
+                    color: #fff;
+                    margin:30px 0;
+                    cursor: pointer;
+                    .a_storeButton{                        
+                        span{
+                            font-size: 26px;
+                        }
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:375px){
+    .a_storeProject{
+        max-width: 375px;
+        margin-top: 60px;
+        margin-left: -64px;
+        margin-right: 14px;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .a_store_left{
+            max-width: 375px;
+            position: relative;
+            margin-top: 200px;
+            #a_store1{
+                position: absolute;
+                bottom: 10px;
+                max-width: 347px;
+            }
+            #a_store2{
+                display: none;
+                position: absolute;
+                bottom: 10px;
+                max-width: 347px;
+            }
+            #a_store3{
+                display: none;
+                position: absolute;
+                bottom: 10px;
+                max-width: 347px;
+            }
+            #a_store4{
+                display: none;
+                position: absolute;
+                bottom: 10px;
+                max-width: 347px;
+            }
+            #a_store5{
+                display: none;
+                position: absolute;
+                bottom: 10px;
+                max-width: 347px;
+            }
+            span{
+                margin-top: 80px;
+                width: 620px;
+                h2{
+                    font-size: 26px;
+                    text-decoration: underline;
+                    letter-spacing: -3px;
+                    animation: ani06 0.5s;
+                }
+                h3{
+                    margin-top:25px; 
+                    font-size: 21px;
+                    letter-spacing: 1px; 
+                    animation: ani06 1s;
+                } 
+                iframe{
+                    margin-top: 10px;
+                    animation: ani06 1.5s;
+                    width: 347px;
+                    margin-left: -2px;
+                    height: 228px;
+                }
+            }          
+        }
+        .a_store_right{
+            background: #222;
+            background: #222;
+            height: 354px;
+            max-width: 375px;
+            width: 100%;
+            margin-left: 64px;
+            margin-top: -92px;
+            margin-bottom: -204px;
+            .a_store_news{
+                ul{
+                    margin-left: 36px;
+                    margin-top: 30px;
+                    li{
+                        color: #fff;
+                        margin:30px 0;
+                        cursor: pointer;
+                        .a_storeButton{
+                            width: 375px;                        
+                            span{
+                                font-size: 26px;
+                            }
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+
+

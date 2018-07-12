@@ -1,0 +1,40 @@
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body{
+  overflow-x:hidden;
+}
+
+.w_bgb{
+ 
+  // overflow: hidden;
+  width:100%;
+  max-width:1920px;
+  // overflow-x:hidden;
+  margin:0 auto;
+}
+
+.w_first_container{
+  margin-top:80px;
+}
+
+.w_flex{
+  display:flex;
+}
+
+.w_relative{
+  position: relative;
+}
+
+.w_absolute{
+  position: absolute;
+}
+
+@media screen and (max-width:375px){
+
+
+
+}

@@ -1,0 +1,1104 @@
+$font:48px;
+$margincenter:0 auto;
+
+@mixin w_life_area{
+    z-index:9;
+    align-content: center;
+    max-width:1903px;
+    width:100%;
+    height:907px;
+    align-items:center;
+    position: relative;
+    top: 50px;
+    left:200px;
+}
+
+@mixin more_introduction_style{
+    width: 150px;
+    height: 30px;        
+    background: #000;
+    border-radius: 10px;
+    text-align: center; 
+    padding-top: 16px;
+    margin-top: 20px;
+    margin-bottom: 38px;    
+    cursor: pointer;
+}
+@mixin btn_text_style{
+    font-size: 16px; 
+    color: #fff; 
+    letter-spacing: 2px;
+}
+
+/*------RWD*/
+$pc-screen:1903px;
+$phone-screen:375px;
+@mixin phone-width(){
+    @media screen and (max-width:$phone-screen){
+        @content;
+    }
+}$phone-screen:375px;
+@mixin phone-width(){
+    @media screen and (max-width:$phone-screen){
+        @content;
+    }
+}
+/*------RWD*/
+
+.w_lifeside_area1{
+        
+    background-image:url(/images/life/Hip-Hop-Wallpaper7.jpg) ;
+    background-position: center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    display:none;
+                
+}
+
+.w_life_p_large{
+    font-size:110px;
+    font-weight:bold;
+    letter-spacing:-2px;
+    color:#fff;
+    text-shadow:0px 10px 10px rgba(0,0,0,0.75);
+}
+
+
+
+.w_life_area2{
+    margin-bottom:43px;
+    
+}
+
+.w_life_p_different{
+    font-size:42px;
+    font-weight:bold;
+    border-left:14px solid #000000;
+    padding-left:20px;
+    margin:50px 200px;
+}
+
+.w_life_p_fake{
+    width:1300px;
+    font-size:16px;
+    margin-left:200px;
+    font-weight: bold;
+}
+
+.w_life_area3{
+    @include w_life_area;
+    
+    img{
+        width:1100px;
+        height:618px;   
+    }
+    .w_life_area3_pro{
+        bottom:220px;
+        img{
+            width:140px;
+            height:140px;
+            box-shadow:0 7px 5px rgba(0,0,0,0.75);
+            margin-left:40px;
+        }
+    }
+    .w_life_area3_title{
+        font-size:110px;
+        color:#8bc53f;
+        letter-spacing:-5px;
+        left: 850px;
+        p{
+            display:inline-block;
+        }
+        .w_l_a_t_2{
+            border:7px solid #8bc53f;
+            margin:0 30px;
+        }
+    }
+    .w_life_area3_about{
+        left: 830px;
+        top: 300px;
+        .w_life_area3_triall{
+            bottom:0px;
+            left:900px;
+            .w_tri2_button{
+                
+                top: 330px;
+                left: 400px;
+                font-size:20px;
+                font-weight:bold;
+                
+            }
+            .a_more_introduction{
+                @include more_introduction_style;
+                .a_btn_text{
+                    @include btn_text_style;    
+                }
+            }
+        }
+        .w_life_area3_tri1{
+           
+            width:661px;
+            height:456px;
+            background-color:#0b9539;
+            clip-path: polygon(6% 16%, 89% 25%, 100% 100%, 0 87%);
+            
+        }
+        .w_life_area3_tri2{
+            width:661px;
+            height:456px;
+            background-color:#39b44a;
+            clip-path: polygon(20% 0%, 93% 24%, 100% 100%, 0 87%);
+        
+            .w_tri2_p{
+                
+                color:#fff;
+                font-size:16px;
+                margin:150px auto;
+                width:300px;
+                font-weight: bold;
+            }
+            
+        }
+    }
+}
+
+
+.w_life_area4{
+    @include w_life_area;
+
+    .w_life_area4_img{
+        left:330px;
+    }
+    img{
+        width:1100px;
+        height:618px; 
+        
+    }
+    .w_life_area4_pro{
+        bottom:220px;
+        left:830px;
+        img{
+            width:140px;
+            height:140px;
+            box-shadow:0 7px 5px rgba(0,0,0,0.75);
+            margin-left:40px;
+        }
+    }
+    .w_life_area4_title{
+        font-size:110px;
+        color:#c0272d;
+        letter-spacing:-5px;
+        left: 0px;
+        p{
+            display:inline-block;
+        }
+        .w_l_a_t_2{
+            border:7px solid #c0272d;
+            margin:0 30px;
+        }
+    }
+    .w_life_area4_about{
+        left: 0px;
+        top: 300px;
+        .w_life_area4_triall{
+            bottom:0px;
+            left:900px;
+            .w_tri2_button{
+                
+                top: 330px;
+                left: 100px;
+                font-size:20px;
+                font-weight:bold;
+
+            }
+            .a_more_introduction{
+                @include more_introduction_style;
+                .a_btn_text{
+                    @include btn_text_style;    
+                }
+            }
+        }
+        .w_life_area4_tri1{
+           
+            width:661px;
+            height:456px;
+            background-color:#951c20;
+            clip-path: polygon(0 22%, 100% 17%, 100% 100%, 8% 93%);
+            
+        }
+        .w_life_area4_tri2{
+            width:661px;
+            height:456px;
+            background-color:#c0272d;
+            clip-path: polygon(0 22%, 87% 6%, 100% 100%, 8% 93%);
+        
+            .w_tri2_p{
+                font-weight: bold;
+                color:#fff;
+                font-size:16px;
+                margin:150px auto;
+                width:300px;
+                margin-top: 180px;
+            }
+            
+        }
+    }
+}
+
+
+.w_life_area5{
+    @include w_life_area;
+    img{
+        width:927px;
+        height:618px;
+    }
+    .w_life_area5_pro{
+        bottom:220px;
+        img{
+            width:140px;
+            height:140px;
+            box-shadow:0 7px 5px rgba(0,0,0,0.75);
+            margin-left:40px;
+        }
+    }
+    .w_life_area5_title{
+        font-size:110px;
+        color:#faaf3b;
+        letter-spacing:-5px;
+        left: 850px;
+        p{
+            display:inline-block;
+        }
+        .w_l_a_t_2{
+            border:7px solid #faaf3b;
+            margin:0 30px;
+        }
+    }
+    .w_life_area5_about{
+        left: 830px;
+        top: 300px;
+        .w_life_area5_triall{
+            bottom:0px;
+            left:900px;
+            .w_tri2_button{
+                top: 330px;
+                left: 400px;
+                font-size:20px;
+                font-weight:bold;
+                
+            }
+            .a_more_introduction{
+                @include more_introduction_style;
+                .a_btn_text{
+                    @include btn_text_style;    
+                }
+            }
+        }
+        .w_life_area5_tri1{
+           
+            width:661px;
+            height:456px;
+            background-color:#f05a24;
+            clip-path: polygon(12% 10%, 100% 39%, 83% 100%, 0 90%);
+            
+        }
+        .w_life_area5_tri2{
+            width:661px;
+            height:456px;
+            background-color:#faaf3b;
+            clip-path: polygon(24% 0, 100% 39%, 83% 100%, 0 90%);
+        
+            .w_tri2_p{
+                
+                color:#fff;
+                font-size:16px;
+                margin:150px auto;
+                width:300px;
+                font-weight: bold;
+            }
+            
+        }
+    }
+}
+
+.w_life_area6{
+    @include w_life_area;
+    .w_life_area6_img{
+        left: 500px;
+    }
+    img{
+        width:978px;
+        height:660px;
+        
+    }
+    .w_life_area6_pro{
+        bottom: 180px;
+        left:830px;
+        img{
+            width:140px;
+            height:140px;
+            box-shadow:0 7px 5px rgba(0,0,0,0.75);
+            margin-left:40px;
+        }
+    }
+    .w_life_area6_title{
+        font-size:110px;
+        color:#0071bb;
+        letter-spacing:-5px;
+        left: 0px;
+        p{
+            display:inline-block;
+        }
+        .w_l_a_t_2{
+            border:7px solid #0071bb;
+            margin:0 30px;
+        }
+    }
+    .w_life_area6_about{
+        left: 0px;
+        top: 300px;
+        .w_life_area6_triall{
+            bottom:0px;
+            left:900px;
+            .w_tri2_button{
+                
+                top: 330px;
+                left: 100px;
+                font-size:20px;
+                font-weight:bold;
+                
+            }
+            .a_more_introduction{
+                @include more_introduction_style;
+                .a_btn_text{
+                    @include btn_text_style;    
+                }
+            }
+            
+        }
+        .w_life_area6_tri1{
+           
+            width:661px;
+            height:476px;
+            background-color:#0071bb;
+            clip-path: polygon(0 22%, 100% 17%, 100% 100%, 8% 93%);
+            
+        }
+        .w_life_area6_tri2{
+            width:661px;
+            height:476px;
+            background-color:#29aae1;
+            clip-path: polygon(0 22%, 87% 6%, 100% 100%, 8% 93%);
+        
+            .w_tri2_p{
+                
+                color:#fff;
+                font-size:16px;
+                margin:170px auto;
+                width:300px;
+                font-weight: bold;
+            }
+            
+        }
+    }
+}
+
+.w_life_area7{
+    z-index:9;
+    .w_life_big_circle{
+        position: absolute;
+        width: 728px;
+        height: 700px;
+        left:50%;
+        margin-left:-364px;
+        top:50%;
+        margin-top:-350px;
+        border-radius: 50%;
+        transition: .5s all;
+        overflow: hidden;
+        cursor: pointer;
+        .w_life_cs{
+            display:inline-block;
+            width:364px;
+            height:350px;
+            transition: .5s all;
+            opacity: 0;
+            // background-color: blue;
+        }
+        .w_life_cs:hover{
+             opacity: 1;
+        }
+        
+    }
+ 
+    img{
+        position: absolute;
+        left:50%;
+        margin-left:-364px;
+        top:50%;
+        margin-top:-350px;
+        width: 728px;
+        height: 700px;
+        border-radius: 50%;
+        
+    }
+    .w_life_circle{
+        position: absolute;
+        width: 508px;
+        height: 508px;
+        left:50%;
+        margin-left:-254px;
+        top:50%;
+        margin-top:-254px;
+        border-radius: 50%;
+        background-color:#fff;
+
+        display:flex;
+        text-align: center;
+        align-items:center;
+        justify-content:center;
+        span{
+            font-size:24px;
+            font-weight:bold;
+        }
+    
+    }
+}
+
+//marvel mask
+
+
+
+.mask_background_life{
+            width:100%;
+            height: 989px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            .mask_box1{
+                width:13%;
+                height:50%;
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                transition: all 0.35s;
+            }
+            .mask_box2{
+                width:37%;
+                height:50%;
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                transition: all 0.35s;
+            }
+
+            .mask_1{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/life/hiphoplife_mask_01.jpg');
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_2{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/life/hiphoplife_mask_02.jpg');
+                    background-position: right bottom;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 2s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_3{
+                 position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/life/hiphoplife_mask_03.jpg');
+                    background-position: left bottom;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 1s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_4{
+                 position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/life/hiphoplife_mask_04.jpg');
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_5{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/life/hiphoplife_mask_05.jpg');
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_6{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/life/hiphoplife_mask_06.jpg');
+                    background-position: right top;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 1s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_7{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/life/hiphoplife_mask_07.jpg');
+                    background-position: left top;
+                    background-size: cover;
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 2s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .mask_8{
+                position: relative;
+                
+                &:after{
+                    content: "";
+                    background-color: #000;
+                    position:absolute;
+                    top:0;
+                    width:100%;
+                    height:100%;
+                    background-image:url('/images/life/hiphoplife_mask_08.jpg');
+                    animation:mask_delete_height 0.35s;
+                    animation-delay: 3s;
+                    animation-fill-mode: forwards;
+                }           
+            }
+        }
+.marvel_title_type2{
+            position: absolute;
+            height: auto;
+            display: table;
+            margin: auto;
+            top: 7%;
+            // bottom: 0;
+            left:0;
+            right: 0;
+            width:74%;
+            height:164px;
+            overflow: hidden;
+            z-index: 9;
+            text-align: center;
+
+            p:nth-child(1){
+                font-size:64px;
+                color:#fff;
+                text-shadow: 0 10px 10px rgba(0,0,0,0.8);
+                opacity:0;
+                transform: translateY(100px);
+                animation:type_word_show 0.5s;
+                animation-delay:3.5s;
+                animation-fill-mode: forwards;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    max-width:281.59px;
+                    margin-left: -20px;
+                    filter:drop-shadow(0px 10px 10px rgba(0,0,0,0.8));
+                }
+            }
+            p:nth-child(2){
+                font-size:100px;
+                color:#fff;
+                text-shadow: 0 10px 10px rgba(0,0,0,0.8);
+                opacity:0;
+                transform: translateY(100px);
+                animation:type_word_show 0.5s;
+                animation-delay:4s;
+                animation-fill-mode: forwards;
+                overflow: hidden;
+
+                span{
+                    display:inline-block;
+
+                    @include phone-width{
+                        font-size: 70px;
+                    }
+                }
+                span:nth-child(2){
+                    font-size:90px;
+                    letter-spacing: -8px;
+
+                     @include phone-width{
+                        font-size: 66px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+
+
+
+@media screen and(max-width:375px){
+    @mixin w_life_area{
+        align-content: center;
+        max-width:375px;
+        width:100%;
+        height:900px;
+        align-items:center;
+        position: relative;
+        top: 0px;
+        left:0px;
+    }
+
+    @mixin more_introduction_style{
+        width: 150px;
+        height: 30px;        
+        background: #000;
+        border-radius: 10px;
+        text-align: center; 
+        padding-top: 16px;
+        margin-top: 0px;
+        margin-bottom: 38px;    
+        cursor: pointer;
+    }
+    @mixin btn_text_style{
+        font-size: 16px; 
+        color: #fff; 
+        letter-spacing: 2px;
+    }
+
+    .w_lifeside_area1{
+    
+        display:flex;
+          
+    }
+
+    .w_life_p_large{
+    
+        font-size:45px;
+        
+    }
+
+    .w_life_area2{
+        margin-bottom:43px;
+    }
+
+    .w_life_p_different{
+        font-size:42px;
+        font-weight:bold;
+        border-left:14px solid #000000;
+        padding-left:10px;
+        margin:30px 20px;
+    }
+
+    .w_life_p_fake{
+        width:300px;
+        font-size:16px;
+        margin:20px auto;
+        font-weight: bold;
+        line-height: 32px;
+    }
+
+    .w_life_area3{
+        @include w_life_area;
+
+        .w_life_area3_img{
+           
+            width:100%;
+            height:667;  
+            overflow:hidden;
+            top:80px;
+
+
+            img{
+                width:1100px;
+                height:618px;
+                margin-left:-340px;
+            }
+        }
+
+        
+        .w_life_area3_pro{
+            display:none;
+            bottom:220px;
+            img{
+                width:140px;
+                height:140px;
+                box-shadow:0 7px 5px rgba(0,0,0,0.75);
+                margin-left:40px;
+            }
+        }
+        .w_life_area3_title{
+            font-size:50px;
+            color:#8bc53f;
+            letter-spacing:-5px;
+            left: 50px;
+           
+            
+            p{
+                display:inline-block;
+            }
+            .w_l_a_t_2{
+                border:7px solid #8bc53f;
+                margin:0 30px;
+            }
+        }
+        .w_life_area3_about{
+            width:100%;
+            
+            left: 0px;
+            top: 650px;
+            .w_life_area3_triall{
+                bottom:0px;
+                left:0px;
+                .w_tri2_button{
+                    
+                   display:none;
+                    
+                }
+                
+            }
+            .w_life_area3_tri1{
+            
+                width:100%;
+                height:200px;
+                background-color:#0b9539;
+                clip-path: polygon(6% 16%, 89% 25%, 100% 100%, 0 87%);
+                
+            }
+            .w_life_area3_tri2{
+                width:100%;
+                height:200px;
+                background-color:#39b44a;
+                clip-path: polygon(20% 0%, 93% 24%, 100% 100%, 0 87%);
+            
+                .w_tri2_p{
+                    line-height: 26px;
+                    color:#fff;
+                    font-size:16px;
+                    margin:20px 40px;
+                    width:300px;
+                    font-weight: bold;
+                }
+                
+            }
+        }
+    }
+
+
+    .w_life_area4{
+        @include w_life_area;
+        
+        .w_life_area4_img{
+           
+            width:100%;
+            height:667px;  
+            overflow:hidden;
+            top:80px;
+            left:0px;
+            img{
+                width:1100px;
+                height:618px;
+                margin-left:-220px;
+            }
+        }
+
+        
+        .w_life_area4_pro{
+            display:none;
+            bottom:220px;
+            img{
+                width:140px;
+                height:140px;
+                box-shadow:0 7px 5px rgba(0,0,0,0.75);
+                margin-left:40px;
+            }
+        }
+        .w_life_area4_title{
+            font-size:50px;
+            color:#c0272d;
+            letter-spacing:-5px;
+            left: 20px;
+           
+            
+            p{
+                display:inline-block;
+            }
+            .w_l_a_t_2{
+                border:7px solid #c0272d;
+                margin:0 30px;
+            }
+        }
+        .w_life_area4_about{
+            width:100%;
+            
+            left: 0px;
+            top: 650px;
+            .w_life_area4_triall{
+                bottom:0px;
+                left:0px;
+                .w_tri2_button{
+                    
+                    display: none;
+                    
+                }
+                
+            }
+            .w_life_area4_tri1{
+            
+                width:100%;
+                height:200px;
+                background-color:#951c20;
+                
+                
+            }
+            .w_life_area4_tri2{
+                width:100%;
+                height:200px;
+                background-color:#c0272d;
+                
+            
+                .w_tri2_p{
+                    line-height: 26px;
+                    color:#fff;
+                    font-size:16px;
+                    margin:20px 40px;
+                    width:300px;
+                    font-weight: bold;
+                }
+                
+            }
+        }
+    }
+
+
+    .w_life_area5{
+        @include w_life_area;
+        
+        .w_life_area5_img{
+           
+            width:100%;
+            height:667px;  
+            overflow:hidden;
+            top:80px;
+            left:0px;
+            img{
+                width:1100px;
+                height:618px;
+                margin-left:-220px;
+            }
+        }
+
+        
+        .w_life_area5_pro{
+            display:none;
+            bottom:220px;
+            img{
+                width:140px;
+                height:140px;
+                box-shadow:0 7px 5px rgba(0,0,0,0.75);
+                margin-left:40px;
+            }
+        }
+        .w_life_area5_title{
+            font-size:50px;
+            color:#faaf3b;
+            letter-spacing:-5px;
+            left: 50px;
+           
+            
+            p{
+                display:inline-block;
+            }
+            .w_l_a_t_2{
+                border:7px solid #faaf3b;
+                margin:0 30px;
+            }
+        }
+        .w_life_area5_about{
+            width:100%;
+            
+            left: 0px;
+            top: 650px;
+            .w_life_area5_triall{
+                bottom:0px;
+                left:0px;
+                .w_tri2_button{
+                    
+                    display:none;
+                    
+                }
+               
+            }
+            .w_life_area5_tri1{
+            
+                width:100%;
+                height:250px;
+                background-color:#f05a24;
+                
+            }
+
+            .w_life_area5_tri2{
+                width:100%;
+                height:250px;
+                background-color:#faaf3b;
+                
+            
+                .w_tri2_p{
+                   line-height: 26px;
+                    color:#fff;
+                    font-size:16px;
+                    margin:20px 40px;
+                    width:300px;
+                    font-weight: bold;
+                }
+                
+            }
+        }
+    }
+
+    .w_life_area6{
+         @include w_life_area;
+        top:50px;
+        .w_life_area6_img{
+           
+            width:100%;
+            height:667px;  
+            overflow:hidden;
+            top:80px;
+            left:0px;
+            img{
+                width:1100px;
+                height:618px;
+                margin-left:-330px;
+            }
+        }
+
+        
+        .w_life_area6_pro{
+            display:none;
+            bottom:220px;
+            img{
+                width:140px;
+                height:140px;
+                box-shadow:0 7px 5px rgba(0,0,0,0.75);
+                margin-left:40px;
+            }
+        }
+        .w_life_area6_title{
+            font-size:50px;
+            color:#0071bb;
+            letter-spacing:-5px;
+            left: 0px;
+            width:400px;
+            p{
+                display:inline-block;
+            }
+            .w_l_a_t_2{
+                border:7px solid #0071bb;
+                margin:0 30px;
+            }
+        }
+        .w_life_area6_about{
+            width:100%;
+            
+            left: 0px;
+            top: 650px;
+            .w_life_area6_triall{
+                bottom:0px;
+                left:0px;
+                .w_tri2_button{
+                    
+                   display:none;
+                    
+                }
+                
+            }
+            .w_life_area6_tri1{
+            
+                width:100%;
+                height:250px;
+                background-color:#0071bb;
+                
+            }
+
+            .w_life_area6_tri2{
+                width:100%;
+                height:250px;
+                background-color:#29aae1;
+                
+                .w_tri2_p{
+                   line-height: 26px;
+                    color:#fff;
+                    font-size:16px;
+                    margin:20px 40px;
+                    width:300px;
+                    font-weight: bold;
+                }
+                
+            }
+        }
+    }
+
+    .w_life_area7{
+        display:none;
+    }
+
+        
+        
+}

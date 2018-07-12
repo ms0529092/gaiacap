@@ -1,0 +1,43 @@
+$width_one: 100%;
+
+.w_life_best{
+    width: 100%;
+    // height:100vh;
+    max-width:$width_one;
+    display: inline-block;
+    position: relative;
+    // overflow: hidden;
+}
+
+.w_slider_all{
+    display:flex;
+    width:$width_one *4;
+    position: relative;
+    transition: .5s all;
+    height:975px;
+    overflow-y:hidden;
+}
+
+.w_left_100{
+   left:-100%;
+    
+}
+
+.w_slider_little{
+    display:inline-block;
+    width:$width_one;
+    height:0vh;
+}
+@media screen and (max-width:375px){
+    .w_slider_all{
+        height: 50%;
+    }
+    .w_life_best{        
+        width: 375px;
+        height:50%;
+    }
+    
+}
+
+
+

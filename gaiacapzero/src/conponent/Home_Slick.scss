@@ -1,0 +1,60 @@
+$width_one: 100%;
+.w_slick_all{
+    // display:flex;
+    // width:$width_one *4;
+    // position: relative;
+    transition: all .5s ;
+    height:100vh;
+    overflow-y:hidden;
+
+    
+}
+
+.slick-arrow {
+    width:70px;
+    height:70px;
+    // background:black;
+    opacity: 1;
+    
+}
+
+
+.slick-arrow:hover{
+    
+    // background-color:red;
+    transition: .5s all;
+    opacity: .7;
+}
+.slick-next{
+    right:0;
+}
+
+.slick-prev{
+    left:0;
+    z-index: 1;
+    
+}
+.slick-next:before, .slick-prev:before {
+    font-size: 60px;
+    color:#333333;
+    opacity: 1;
+    padding-top:1px;
+}
+
+.slick-dots{
+    visibility: hidden;
+}
+
+@media screen and (max-width:375px){
+    .slick-arrow {
+    //    visibility: hidden;
+       opacity: 0;
+    }
+    .slick-arrow:hover{
+    
+    // background-color:red;
+    transition: .5s all;
+    opacity: 0;
+    }
+    
+}

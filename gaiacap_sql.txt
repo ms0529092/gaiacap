@@ -1,0 +1,339 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.9
+-- https://www.phpmyadmin.net/
+--
+-- 主機: 127.0.0.1
+-- 產生時間： 2018 年 06 月 19 日 07:11
+-- 伺服器版本: 10.1.31-MariaDB
+-- PHP 版本： 7.2.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- 資料庫： `gaiacap`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `gaiacom`
+--
+
+CREATE TABLE `gaiacom` (
+  `sid` int(11) NOT NULL COMMENT '編號',
+  `name` varchar(255) NOT NULL COMMENT '品名',
+  `price` int(10) NOT NULL COMMENT '價錢',
+  `type` int(10) NOT NULL COMMENT '分類',
+  `introduction` varchar(255) NOT NULL COMMENT '介紹',
+  `material` varchar(255) NOT NULL COMMENT '材質',
+  `color` varchar(255) NOT NULL,
+  `caporder` int(10) NOT NULL COMMENT '剩餘數量',
+  `size` varchar(255) NOT NULL COMMENT '尺寸'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 資料表的匯出資料 `gaiacom`
+--
+
+INSERT INTO `gaiacom` (`sid`, `name`, `price`, `type`, `introduction`, `material`, `color`, `caporder`, `size`) VALUES
+(26, '芝加哥小熊隊棒球帽(球員實戰版)', 1080, 1, '芝加哥小熊隊明星三壘手 Kris Bryant(克里斯 ‧ 布萊恩)比賽實著。', '聚酯纖維', '5', 28, ''),
+(27, '紐約大都會隊棒球帽(球員實戰版)', 1080, 1, '紐約大都會明星王牌投手Noah Syndergaard(諾亞 ‧ 辛德賈德)比賽實著。', '聚酯纖維', '5', 50, ''),
+(29, '華盛頓國民隊棒球帽(球員實戰版)', 1080, 1, '華盛頓國民隊明星外野手 Bryce Harper(布萊斯 ‧ 哈波)比賽實著。', '聚酯纖維', '9', 45, ''),
+(32, '休士頓太空人隊棒球帽(球員實戰版)', 1080, 1, '休士頓太空人隊明星二壘手 Jose Altuve(荷西 ‧ 奧圖維)比賽實著。', '聚酯纖維', '9', 32, ''),
+(33, '洛杉磯道奇隊棒球帽(球員實戰版)', 1080, 1, '洛杉磯道奇隊明星王牌投手 Clayton Kershaw(克雷頓 ‧ 柯蕭)比賽實著。', '聚酯纖維', '5', 27, ''),
+(35, '科羅拉多洛磯隊棒球帽(球員實戰版)', 1080, 1, '科羅拉多洛磯隊明星三壘手 Nolan Arenado(諾蘭 ‧ 亞瑞納多)比賽實著。', '聚酯纖維', '9', 40, ''),
+(36, '洛杉磯天使隊棒球帽(球員實戰版)', 1080, 1, '洛杉磯天使隊明星外野手 Mike Trout(麥克 ‧ 楚奧特)比賽實著。', '聚酯纖維', '1', 53, ''),
+(37, '波士頓紅襪隊棒球帽(球員實戰版)', 1080, 1, '波士頓隊明星外野手 Mookie Betts(穆奇 ‧ 貝茲)比賽實著。', '聚酯纖維', '1', 78, ''),
+(38, '亞歷桑納響尾蛇隊棒球帽(球員實戰版)', 1080, 1, '亞歷桑納響尾蛇隊明星王牌投手 Zack Greinke(扎克 ‧ 格林基)比賽實著。', '聚酯纖維', '9', 54, ''),
+(40, '紐約洋基隊棒球帽(球員實戰版)', 1080, 1, '紐約洋基隊明星外野手 Aaron Judge(亞倫 ‧ 賈吉)比賽實著。', '聚酯纖維', '9', 52, ''),
+(43, '西雅圖水手隊棒球帽(球員實戰版)', 1080, 1, '西雅圖水手隊明星二壘手 Robinson Cano(羅賓森 ‧ 坎諾)比賽實著。', '聚酯纖維', '9', 22, ''),
+(46, '舊金山巨人隊棒球帽(球員實戰版)', 1080, 1, '舊金山巨人隊明星王牌投手 Madison Bumgarner(麥迪森 ‧ 邦加納)比賽實著。', '聚酯纖維', '9', 74, ''),
+(47, '邁阿密馬林魚隊棒球帽(球員實戰版)', 1080, 1, '邁阿密馬林魚隊明星王牌投手陳偉殷比賽實著。', '聚酯纖維', '9', 85, ''),
+(62, 'NBA亞特蘭大老鷹隊棒球帽', 1080, 1, 'NBA亞特蘭大老鷹隊徽棒球帽(迷彩版)', '聚酯纖維', '12', 77, ''),
+(64, 'NBA波士頓賽爾提克隊棒球帽', 1080, 1, 'NBA波士頓賽爾提克隊徽棒球帽(迷彩版)', '聚酯纖維', '12', 33, ''),
+(65, 'NBA鳳凰城太陽隊棒球帽', 1080, 1, 'NBA鳳凰城太陽隊徽棒球帽(經典款)', '聚酯纖維', '12', 55, ''),
+(66, 'NBA明尼蘇達灰狼隊棒球帽(新款)', 1080, 1, 'NBA明尼蘇達灰狼隊棒球帽(新款)', '聚酯纖維', '6', 75, ''),
+(67, 'NBA明尼蘇達灰狼隊棒球帽(經典款)', 1080, 1, 'NBA明尼蘇達灰狼隊棒球帽(經典款)', '聚酯纖維', '12', 89, ''),
+(68, 'NBA達拉斯小牛隊棒球帽', 1080, 1, 'NBA達拉斯小牛隊棒球帽(經典款)', '聚酯纖維', '6', 42, ''),
+(69, 'NBA洛杉磯快艇隊棒球帽', 1080, 1, 'NBA洛杉磯快艇隊棒球帽(迷彩版)', '聚酯纖維', '12', 33, ''),
+(70, 'DJ爵士棒球帽(迷彩款)', 1080, 4, 'DJ爵士棒球帽(迷彩款)', '聚酯纖維', '12', 75, ''),
+(71, 'NBA達拉斯小牛隊棒球帽(黑白版)', 1080, 1, 'NBA達拉斯小牛隊棒球帽(黑白版)', '聚酯纖維', '9', 87, ''),
+(72, 'NBA底特律活塞隊棒球帽(黑白版)', 1080, 1, 'NBA底特律活塞隊棒球帽(黑白版)', '聚酯纖維', '9', 89, ''),
+(73, 'NBA金洲勇士隊棒球帽(黑白版)', 1080, 1, 'NBA金洲勇士隊棒球帽(黑白版)', '聚酯纖維', '9', 20, ''),
+(74, 'NBA邁阿密熱火隊棒球帽(經典款)', 1080, 1, 'NBA邁阿密熱火隊棒球帽(經典款)', '聚酯纖維', '9', 10, ''),
+(75, 'NBA密爾瓦基公鹿隊棒球帽', 1080, 1, 'NBA密爾瓦基公鹿隊棒球帽(黑白款)', '聚酯纖維', '9', 25, ''),
+(76, 'NBA奧克拉荷馬雷霆隊棒球帽', 1080, 1, 'NBA奧克拉荷馬雷霆隊棒球帽(經典款)', '聚酯纖維', '9', 60, ''),
+(77, 'NBA聖安東尼奧馬刺隊棒球帽', 1080, 1, 'NBA聖安東尼奧馬刺隊棒球帽(經典款)', '聚酯纖維', '9', 75, ''),
+(78, 'NBA多倫多暴龍隊棒球帽', 1080, 1, 'NBA多倫多暴龍隊棒球帽(經典款)', '聚酯纖維', '9', 45, ''),
+(79, '亞特蘭大勇士隊棒球帽(經典款)', 1080, 1, 'NBA亞特蘭大勇士隊經典棒球帽', '聚酯纖維', '11', 75, ''),
+(80, '波士頓紅襪隊棒球帽(經典款)', 1080, 1, 'MLB波士頓紅襪隊經典棒球帽', '聚酯纖維', '11', 33, ''),
+(81, '波士頓紅襪隊棒球帽(比賽特別款)', 1280, 1, 'MLB波士頓紅襪隊經典棒球帽，比賽特別款', '聚酯纖維', '6', 22, ''),
+(82, '休士頓太空人隊棒球帽(經典款)', 1080, 1, 'MLB休士頓太空人隊全白經典款', '聚酯纖維', '10', 52, ''),
+(83, '洛杉磯道奇隊棒球帽(白版)', 1080, 1, '洛杉磯道奇隊棒球帽，純白乾淨款', '聚酯纖維', '10', 35, ''),
+(85, '波士頓紅襪隊棒球帽(比賽特別黃款)', 1080, 1, 'MLB波士頓紅襪隊棒球帽，比賽特別款', '聚酯纖維', '3', 45, ''),
+(86, '波士頓紅襪隊棒球帽(紫版)', 1080, 1, 'MLB波士頓紅襪隊，ONE SIZE棒球帽(紫版)', '聚酯纖維', '7', 20, ''),
+(87, '波士頓紅襪隊棒球帽(橘版)', 1080, 1, 'MLB波士頓紅襪隊棒球帽，橘色款', '聚酯纖維', '2', 57, ''),
+(88, '亞歷桑納響尾蛇隊棒球帽(圖案版)', 1080, 1, 'MLB亞歷桑納響尾蛇隊棒球帽，圖案經典款', '聚酯纖維', '4', 60, ''),
+(89, '聖地牙哥教士隊(特別版)', 1080, 1, 'MLB聖地牙哥教士隊，特別款', '聚酯纖維', '8', 75, ''),
+(90, '九五年塗鴉流行帽(饒舌款)', 980, 4, '九五年塗鴉流行帽，配有相匹配的NFC標誌，右側有Pro Bowl側面貼紙，以及後部的後扣。45度角的五顆星，展現了饒舌重要的元素。', '聚酯纖維', '5', 85, ''),
+(91, 'DOUBLE DARE 九五年經典款(塗鴉版)', 1280, 4, '前面板上飾有刺繡雙Dare徽章，後面有Nickelodeon飛濺徽章', '聚酯纖維', '9', 22, ''),
+(92, '紐約洋基特殊塗鴉款', 1080, 4, '紐約洋基特殊塗鴉款在前面板上繡有融化洋基標誌，後面還有一個隊徽，並有一個可調回彈蓋。', '聚酯纖維', '9', 45, ''),
+(93, 'Marvel美國隊長聯名款(迷彩版)', 1080, 3, '美國隊長潮帽，搭配美國隊長縫線標誌，中性百搭配上可調式頭圍，材質不悶熱、透氣，配上後方的小LOGO，讓你無論正面、側面或背面，都一樣帥氣', '聚酯纖維', '12', 22, ''),
+(94, 'Marvel死侍電影聯名系列(灰紅款)', 1080, 3, '死侍潮帽，搭配縫線標誌，中性百搭配上可調式頭圍，材質不悶熱、透氣，配上後方的死侍英文字，讓你無論正面、側面或背面，都一樣帥氣', '聚酯纖維', '12', 33, ''),
+(95, 'Marvel黑豹聯名系列(藍黑版)', 1080, 3, '黑豹潮帽，搭配特殊材質反光標誌，中性百搭配上可調式頭圍，材質不悶熱、透氣，配上後方的死侍英文字，讓你無論正面、側面或背面，都一樣帥氣', '聚酯纖維', '9', 78, ''),
+(96, 'Marvel索爾聯名系列(黑色款)', 1080, 3, '索爾潮帽，搭配特殊材質標誌，中性百搭配上可調式頭圍，材質不悶熱、透氣，配上正面的雷神之槌，讓你正面霸氣凌人，一樣帥氣滿分。', '聚酯纖維', '9', 44, ''),
+(97, 'Marvel浩克聯名系列(黑綠版)', 1080, 3, '浩克潮帽，搭配特殊標誌，中性百搭配上可調式頭圍，材質不悶熱、透氣，配上後方的浩克的拳頭，讓你無論正面、側面或背面，都一樣霸氣', '聚酯纖維', '4', 55, ''),
+(98, 'Marvel鋼鐵人聯名款(紅款)', 1080, 3, '鋼鐵人潮帽，搭配特殊材質標誌，中性百搭配上可調式頭圍，材質不悶熱、透氣，讓你無論正面、側面或背面，都一樣霸氣', '聚酯纖維', '1', 22, ''),
+(99, 'DJ爵士棒球帽(皮黑款)', 1080, 4, '男女都適合，結合DJ重要元素：金色，和皮革的特殊質感，搭配出來的街頭風格', '皮革', '9', 75, ''),
+(100, '街舞文字棒球帽(綠色款)', 1080, 4, '保有塗鴉元素，想藉此分享給大家「不管是幫助我們的人，或是背後攻擊我們的人，相信我自己然後做好自己', '聚酯纖維', '4', 80, ''),
+(101, '克里夫蘭印地安人隊棒球帽(球員實戰版)', 1080, 1, '克里夫蘭印地安人隊明星王牌投手 (柯瑞 ‧ 克魯伯)比賽實著。', '聚酯纖維', '9', 50, '');
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `gaiacom_capcircle`
+--
+
+CREATE TABLE `gaiacom_capcircle` (
+  `sid` int(11) NOT NULL,
+  `ename` varchar(255) NOT NULL,
+  `cname` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 資料表的匯出資料 `gaiacom_capcircle`
+--
+
+INSERT INTO `gaiacom_capcircle` (`sid`, `ename`, `cname`) VALUES
+(1, '', '後扣'),
+(2, '', '非後扣');
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `gaiacom_color`
+--
+
+CREATE TABLE `gaiacom_color` (
+  `sid` int(10) NOT NULL,
+  `ename` varchar(255) NOT NULL,
+  `cname` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 資料表的匯出資料 `gaiacom_color`
+--
+
+INSERT INTO `gaiacom_color` (`sid`, `ename`, `cname`) VALUES
+(1, 'red', '紅'),
+(2, 'orange', '橙'),
+(3, 'yellow', '黃'),
+(4, 'green', '綠'),
+(5, 'blue', '藍'),
+(6, 'indigo', '深藍'),
+(7, 'purple', '紫'),
+(8, 'brown', '棕'),
+(9, 'black', '黑'),
+(10, 'white', '白'),
+(11, 'gold', '金'),
+(12, 'gray', '灰');
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `gaiacom_type`
+--
+
+CREATE TABLE `gaiacom_type` (
+  `sid` int(10) NOT NULL,
+  `ename` varchar(255) NOT NULL,
+  `cname` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 資料表的匯出資料 `gaiacom_type`
+--
+
+INSERT INTO `gaiacom_type` (`sid`, `ename`, `cname`) VALUES
+(1, 'star', '球星'),
+(3, 'marvel', '漫威'),
+(4, 'live', '生活');
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `gaiaorder`
+--
+
+CREATE TABLE `gaiaorder` (
+  `sid` int(11) NOT NULL COMMENT '訂單編號',
+  `user_id` int(10) NOT NULL COMMENT '使用者ID',
+  `create_time` varchar(255) NOT NULL COMMENT '訂單產生時間',
+  `user_name` varchar(255) NOT NULL COMMENT '使用者真實姓名',
+  `user_address` varchar(255) NOT NULL COMMENT '使用者地址',
+  `user_mobile` int(20) NOT NULL COMMENT '使用者電話',
+  `user_email` varchar(255) NOT NULL COMMENT '使用者電郵',
+  `order_type` int(10) NOT NULL COMMENT '取貨方式(1便利2貨到)',
+  `order_market` varchar(255) NOT NULL COMMENT '超商名稱(1全家 2 7-11)',
+  `order_store` varchar(255) NOT NULL COMMENT '門市名稱',
+  `order_time` varchar(255) NOT NULL COMMENT '方便取貨時間',
+  `order_method` varchar(255) NOT NULL COMMENT '訂單狀態'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 資料表的匯出資料 `gaiaorder`
+--
+
+INSERT INTO `gaiaorder` (`sid`, `user_id`, `create_time`, `user_name`, `user_address`, `user_mobile`, `user_email`, `order_type`, `order_market`, `order_store`, `order_time`, `order_method`) VALUES
+(1, 1, '2018-05-15', '陳小明', '台北市南港區忠孝東路走九遍', 988777666, 'whale@whale.com', 1, '7-11', '育德門市', '早上九點到晚上十點', '已結單');
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `gaiaorder_detail`
+--
+
+CREATE TABLE `gaiaorder_detail` (
+  `order_sid` int(10) NOT NULL COMMENT '訂單編號',
+  `com_id` int(11) NOT NULL COMMENT '商品編號',
+  `com_product` int(11) NOT NULL COMMENT '商品數量'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 資料表的匯出資料 `gaiaorder_detail`
+--
+
+INSERT INTO `gaiaorder_detail` (`order_sid`, `com_id`, `com_product`) VALUES
+(1, 26, 5),
+(1, 27, 3);
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `gaiauser`
+--
+
+CREATE TABLE `gaiauser` (
+  `sid` int(10) NOT NULL,
+  `u_id` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `u_pwd` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `email` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `mobile` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `other1` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `other2` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `modify_date` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `create_date` varchar(255) CHARACTER SET latin1 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 資料表的匯出資料 `gaiauser`
+--
+
+INSERT INTO `gaiauser` (`sid`, `u_id`, `u_pwd`, `email`, `mobile`, `other1`, `other2`, `modify_date`, `create_date`) VALUES
+(1, 'whale', 'whale', 'whale@gmail.com', '0988333222', '', '', '2018-04-24 00:00:00', '2018-04-24 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `gaiauser_like`
+--
+
+CREATE TABLE `gaiauser_like` (
+  `sid` int(10) NOT NULL,
+  `com` int(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 資料表的匯出資料 `gaiauser_like`
+--
+
+INSERT INTO `gaiauser_like` (`sid`, `com`) VALUES
+(1, 94),
+(1, 88),
+(1, 100);
+
+--
+-- 已匯出資料表的索引
+--
+
+--
+-- 資料表索引 `gaiacom`
+--
+ALTER TABLE `gaiacom`
+  ADD PRIMARY KEY (`sid`),
+  ADD UNIQUE KEY `name` (`name`);
+
+--
+-- 資料表索引 `gaiacom_capcircle`
+--
+ALTER TABLE `gaiacom_capcircle`
+  ADD PRIMARY KEY (`sid`);
+
+--
+-- 資料表索引 `gaiacom_color`
+--
+ALTER TABLE `gaiacom_color`
+  ADD PRIMARY KEY (`sid`);
+
+--
+-- 資料表索引 `gaiacom_type`
+--
+ALTER TABLE `gaiacom_type`
+  ADD PRIMARY KEY (`sid`);
+
+--
+-- 資料表索引 `gaiaorder`
+--
+ALTER TABLE `gaiaorder`
+  ADD PRIMARY KEY (`sid`);
+
+--
+-- 資料表索引 `gaiauser`
+--
+ALTER TABLE `gaiauser`
+  ADD PRIMARY KEY (`sid`),
+  ADD UNIQUE KEY `u_id` (`u_id`);
+
+--
+-- 在匯出的資料表使用 AUTO_INCREMENT
+--
+
+--
+-- 使用資料表 AUTO_INCREMENT `gaiacom`
+--
+ALTER TABLE `gaiacom`
+  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT COMMENT '編號', AUTO_INCREMENT=102;
+
+--
+-- 使用資料表 AUTO_INCREMENT `gaiacom_capcircle`
+--
+ALTER TABLE `gaiacom_capcircle`
+  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- 使用資料表 AUTO_INCREMENT `gaiacom_color`
+--
+ALTER TABLE `gaiacom_color`
+  MODIFY `sid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- 使用資料表 AUTO_INCREMENT `gaiacom_type`
+--
+ALTER TABLE `gaiacom_type`
+  MODIFY `sid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- 使用資料表 AUTO_INCREMENT `gaiaorder`
+--
+ALTER TABLE `gaiaorder`
+  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT COMMENT '訂單編號', AUTO_INCREMENT=41;
+
+--
+-- 使用資料表 AUTO_INCREMENT `gaiauser`
+--
+ALTER TABLE `gaiauser`
+  MODIFY `sid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+COMMIT;

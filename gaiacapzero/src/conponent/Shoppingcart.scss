@@ -1,0 +1,17 @@
+.shoppingcart{
+    display:table;
+    width:100%;
+    margin-top:80px;
+    position: relative; 
+
+    .list{
+        width:100%;
+        height:auto;
+        background:#e1e1e1;
+    }
+   
+}
+
+.w_shopping_cart_display{
+    display:none;
+}

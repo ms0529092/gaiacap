@@ -1,0 +1,133 @@
+.a_playerIntroduction{
+    position: fixed;
+    max-width: 1920px;
+    width: 100%;
+    height: 100vh;
+    background: #f5f4f9;
+    z-index: 9998;
+    transition: all 0.5s;
+}
+.a_playerIntroduction2{
+    position: fixed;
+    max-width: 1920px;
+    width: 100%;
+    height: 100vh;
+    background: #f5f4f9;
+    z-index: 9998;
+    transition: all 0.5s;
+}
+.a_playerName{  
+    max-width: 1780px;
+    width: 100%;
+    height: 100vh;
+    .a_playersPic{
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 777px;
+        }        
+    }
+    .a_bg_gradient{
+        position: absolute;
+        width: 260px;
+        height: 100vh;
+        background: linear-gradient(-90deg,#f5f4f9,rgba(245,244,249,0));
+        left: 517px;
+    }
+    .a_playersMoreIntroduction{
+        position: absolute;
+        display: flex;
+        width: 50%;
+        height: 100vh;
+        right: 0;
+        .a_firstpart{
+            margin-right: 50px;
+            width: 50%;
+            h3{
+                margin-top: 100px;
+                font-size: 42px;
+                font-weight: 700;
+            }
+            span{
+                display: block;
+                margin: 10px 0;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            p{
+                margin-top: 30px; 
+                letter-spacing: 1.5px;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: justify;
+            }
+        }
+        .a_secondpart{
+            width: 50%;
+            margin-right: 100px;
+            p{
+                letter-spacing: 1.5px;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: justify;
+                // margin-top: 207px; 
+            }
+        
+            .a_shoppingbutton{
+                width: 150px;
+                height: 30px;
+                background: #000;
+                border-radius: 10px;
+                text-align: center;
+                padding-top: 10px;
+                margin-top: 80px;
+                margin-bottom: 38px;
+                margin-left: 270px;
+                cursor: pointer;
+                a{  
+                    color: white;
+                    text-decoration: none;
+                    font-size: 18px;
+                    letter-spacing: 4px;
+                }
+            }
+            .a_arcoss_icon{
+                margin-top: 50px;
+                margin-left: 374px;
+                width: 50%;
+                height: 16.5%;
+                position: relative;
+                cursor: pointer;
+                .a_crossline1{
+                    position: absolute;
+                    margin-top: 30px;
+                    width: 20%;
+                    height: 1%;
+                    display: block;
+                    background-color: #000;
+                    transform: rotate(45deg) ;
+                }
+                .a_crossline2{
+                    position: absolute;
+                    margin-top: 30px;
+                    width: 20%;
+                    height: 1%;
+                    display: block;
+                    background-color: #000;
+                    transform: rotate(135deg) ;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:375px){
+    .a_playerIntroduction{
+        display: none;
+    }
+    .a_playerIntroduction2{
+        display: none;
+    }
+}
+
+

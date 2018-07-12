@@ -1,0 +1,45 @@
+.w_sport_outside{
+    height:100vh;
+    background-image:url(/images/MLB/MLBplayerlist_mask-09.png);
+    background-size:100% 100%;
+}
+.w_mlb_logo_outside{
+    display:none;
+}
+
+@media screen and(max-width:375px){
+ 
+    .w_sport_outside{
+        background-image:url(/images/GAIA_CAPA_playlist_banner_pic1.jpg);
+        
+        position: relative;
+        height:100vh;
+        display:flex;
+        .w_mlb_logo_outside{
+            display:flex;
+            flex-wrap:wrap;
+            text-align: center;
+                img{
+                    position: absolute;
+                    left:50%;
+                    margin-left:-100px;
+                    top:40%;
+                }
+                span{
+                    position: absolute;
+                    left:50%;
+                    margin-left:-160px;
+                    top:60%;
+                    font-size:40px;
+                    color:white;
+                    font-weight: bold;
+                }
+                p{
+                    
+                    font-size:48px;
+                    color:white;
+                    font-weight: bold;  
+                }
+        }
+    }   
+}
